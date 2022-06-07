@@ -43,15 +43,17 @@ class gpvdm:
         setattr(x, parameter, value)
         return self
 
-    def modify_pm(self, *args, category, layer_name, layer_number, value):
+    def modify_pm(self, *args, category, layer_name=None, layer_number=None, value):
         x = getattr(self.data, category[0])
         try:
             for i in category[1:]:
                 x = getattr(x, i)
         except:
             print("")
-        x = getattr(x, layer_name)
-
+        try:
+            x = getattr(x, layer_name)
+        except:
+            print("")
         if layer_number == None:
             x = x
         else:

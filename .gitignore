@@ -1,3 +1,4 @@
 GPVDM/
 GPVDM_Example/
 venv/
+*.exp
