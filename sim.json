@@ -1,0 +1,3985 @@
+{
+	"sim": {
+		"simmode":"segment0@jv",
+		"stoppoint":0,
+		"version":"v8.0",
+		"notes":"",
+		"first_sim_message":"",
+		"use_gpvdm_local":"True",
+		"opengl": {
+			"gl_dy_layer_offset":0.1,
+			"gl_device_height":1.4,
+			"gl_render_text":"True",
+			"color_r":0.8,
+			"color_g":0.8,
+			"color_b":0.8,
+			"color_alpha":0.8,
+			"render_grid":"True",
+			"gl_view": {
+				"xRot":25.0,
+				"yRot":1.0,
+				"zRot":0.0,
+				"x_pos":0.0,
+				"y_pos":0.0,
+				"zoom":16,
+				"id":"id8f8b356b5c09d7e3",
+				"name":"view",
+				"window_x":0.0,
+				"window_y":0.0,
+				"window_w":0.0,
+				"window_h":0.0,
+				"enable_view_move":"True"
+				}
+			}
+		},
+	"jv": {
+		"segments":1,
+		"segment0": {
+			"name":"JV\ncurve",
+			"icon":"jv",
+			"config": {
+				"Vstart":0.0,
+				"Vstop":1.1,
+				"Vstep":0.02,
+				"jv_step_mul":1.0,
+				"jv_use_external_voltage_as_stop":"True",
+				"jv_light_efficiency":1.0,
+				"jv_max_j":1000000.0,
+				"jv_Rcontact":-1.0,
+				"jv_Rshunt":-1.0,
+				"jv_single_point":"False",
+				"dump_verbosity":0,
+				"dump_energy_space":"false",
+				"dump_x":0,
+				"dump_y":0,
+				"dump_z":0
+				},
+			"id":"id75efdf9e5e0a509f"
+			}
+		},
+	"dump": {
+		"plot":"False",
+		"newton_dump":"False",
+		"dump_dynamic":"False",
+		"startstop":"False",
+		"plotfile":"plot",
+		"start_stop_time":0.0,
+		"dump_1d_slice_xpos":-1,
+		"dump_1d_slice_zpos":-1,
+		"dump_verbose_electrical_solver_results":"True",
+		"dump_write_converge":"False",
+		"dump_norm_time_to_one":"False",
+		"dump_norm_y_axis":"False",
+		"dump_print_hardware_info":0,
+		"dump_write_out_band_structure":0,
+		"dump_first_guess":"False",
+		"dump_log_level":"screen_and_disk",
+		"dump_optical_probe":"False",
+		"dump_optical_probe_spectrum":"False",
+		"dump_print_text":0,
+		"dump_info_text":"True",
+		"dump_ray_trace_map":"False",
+		"dump_use_cache":"False",
+		"dump_write_headers":"True",
+		"dump_remove_dos_cache":"True",
+		"dump_dynamic_pl_energy":"False",
+		"banned_files": {
+			"segments":8,
+			"segment0": {
+				"banned_enabled":"True",
+				"banned_file_name":"iv.dat"
+				},
+			"segment1": {
+				"banned_enabled":"True",
+				"banned_file_name":"k.csv"
+				},
+			"segment2": {
+				"banned_enabled":"True",
+				"banned_file_name":"charge_tot.csv"
+				},
+			"segment3": {
+				"banned_enabled":"True",
+				"banned_file_name":"charge.dat"
+				},
+			"segment4": {
+				"banned_enabled":"True",
+				"banned_file_name":"charge_with_surface.csv"
+				},
+			"segment5": {
+				"banned_enabled":"True",
+				"banned_file_name":"filter_test.dat"
+				},
+			"segment6": {
+				"banned_enabled":"True",
+				"banned_file_name":"jv.dat"
+				},
+			"segment7": {
+				"banned_enabled":"True",
+				"banned_file_name":"object_stats.json"
+				}
+			}
+		},
+	"math": {
+		"maxelectricalitt_first":1000,
+		"electricalclamp_first":0.1,
+		"math_electrical_error_first":1e-09,
+		"newton_first_temperature_ramp":"False",
+		"maxelectricalitt":100,
+		"electricalclamp":1.0,
+		"electricalerror":1e-08,
+		"newton_clever_exit":"True",
+		"newton_min_itt":5,
+		"remesh":0,
+		"newmeshsize":8,
+		"kl_in_newton":1,
+		"solver_name":"umfpack",
+		"newton_name":"newton",
+		"complex_solver_name":"complex_umfpack",
+		"math_t0":300.0,
+		"math_d0":243.75,
+		"math_n0":1e+20,
+		"math_newton_cache":"False",
+		"math_dynamic_mesh":"False",
+		"cache_path":"/home/rod/cache",
+		"math_stop_on_convergence_problem":"True",
+		"math_stop_on_inverted_fermi_level":"False",
+		"solver_verbosity":"solver_verbosity_at_end"
+		},
+	"light": {
+		"light_model":"full",
+		"Psun":1.0,
+		"sun":"AM1.5G",
+		"alignmesh":0,
+		"meshpoints":200,
+		"light_wavelength_auto_mesh":"False",
+		"electron_eff":1.0,
+		"hole_eff":1.0,
+		"Dphotoneff":0.6,
+		"NDfilter":0.0,
+		"light_flat_generation_rate":2e+28,
+		"light_file_generation":"Gn.inp",
+		"light_file_qe_spectra":"/home/rod/gpvdm_local/user_data/mohamed/devices/si_eqe.dat",
+		"light_file_generation_shift":2e-07,
+		"light_profile":"box",
+		"dump_verbosity":-1
+		},
+	"light_sources": {
+		"config": {
+			"lpoints":100
+			},
+		"lights": {
+			"segments":1,
+			"segment0": {
+				"enabled":"True",
+				"rotate_y":0,
+				"rotate_x":0,
+				"x0":0.5214722110380947,
+				"z0":0.22449646242908913,
+				"y0":0.027145112233667,
+				"dx":1e-09,
+				"dy":1e-09,
+				"dz":1e-09,
+				"dx_padding":0.0,
+				"dy_padding":0.0,
+				"dz_padding":0.0,
+				"shape_nx":1,
+				"shape_ny":1,
+				"shape_nz":1,
+				"name":"Top",
+				"icon":"lighthouse",
+				"light_illuminate_from":"y0",
+				"lstart":3e-07,
+				"lstop":1.6e-06,
+				"virtual_spectra": {
+					"light_spectra": {
+						"segments":1,
+						"segment0": {
+							"light_spectrum":"AM1.5G",
+							"light_multiplyer":1.0
+							}
+						},
+					"light_filters": {
+						"segments":0
+						},
+					"external_interface": {
+						"enabled":"False",
+						"light_external_n":1.0
+						},
+					"id":"id4f56ef2b5aecb7f7"
+					},
+				"ray_theta_steps":100,
+				"ray_theta_start":0,
+				"ray_theta_stop":360,
+				"ray_phi_steps":50,
+				"ray_phi_start":0,
+				"ray_phi_stop":360,
+				"filter_local_ground_view_factor":180.0,
+				"id":"idf7d55656ea9e9efd"
+				}
+			}
+		},
+	"detectors": {
+		"segments":0
+		},
+	"server": {
+		"gpvdm_core_max_threads":0,
+		"server_stall_time":2000,
+		"server_exit_on_dos_error":1,
+		"server_max_run_time":345600,
+		"server_auto_cpus":0,
+		"server_min_cpus":1,
+		"server_steel":0,
+		"cluster":1,
+		"server_use_dos_disk_cache":"True",
+		"max_gpvdm_instances":0
+		},
+	"epitaxy": {
+		"layers":4,
+		"layer0": {
+			"enabled":"True",
+			"rotate_y":0,
+			"rotate_x":0,
+			"x0":0.0,
+			"z0":0.0,
+			"y0":0.0,
+			"dx":0.0024495,
+			"dy":1e-07,
+			"dz":0.0024495,
+			"dx_padding":0.0,
+			"dy_padding":0.0,
+			"dz_padding":0.0,
+			"shape_nx":1,
+			"shape_ny":1,
+			"shape_nz":1,
+			"display_options": {
+				"show_solid":"True",
+				"show_mesh":"True",
+				"show_cut_through_x":"False",
+				"show_cut_through_y":"False",
+				"hidden":"False"
+				},
+			"shape_type":"box",
+			"shape_dos": {
+				"enabled":"False",
+				"symmetric_mobility_e":"symmetric",
+				"mue_z":1e-15,
+				"mue_x":1e-15,
+				"mue_y":1e-05,
+				"symmetric_mobility_h":"symmetric",
+				"muh_z":1e-15,
+				"muh_x":1e-15,
+				"muh_y":1e-05,
+				"Nc":5e+25,
+				"Nv":5e+25,
+				"free_to_free_recombination":0.0,
+				"dos_free_carrier_stats":"mb_equation",
+				"ss_srh_enabled":"False",
+				"srh_n1":1e+20,
+				"srh_p1":1e+20,
+				"srh_tau_n":1e-15,
+				"srh_tau_p":1e-15,
+				"dostype":"exponential",
+				"complex_lumo": {
+					"segments":2,
+					"function0": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						},
+					"function1": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						}
+					},
+				"complex_homo": {
+					"segments":2,
+					"function0": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						},
+					"function1": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						}
+					},
+				"Ntrape":1e+20,
+				"Ntraph":1e+20,
+				"Etrape":0.06,
+				"Etraph":0.06,
+				"ion_density":0.0,
+				"ion_mobility":0.0,
+				"doping_start":0.0,
+				"doping_stop":0.0,
+				"Na0":0.0,
+				"Na1":0.0,
+				"Nd0":0.0,
+				"Nd1":0.0,
+				"Tstart":300.0,
+				"Tstop":305.0,
+				"Tpoints":1,
+				"nstart":-2.5,
+				"nstop":1.0,
+				"npoints":1000,
+				"pstart":-2.5,
+				"pstop":1.0,
+				"ppoints":1000,
+				"srh_start":-0.5,
+				"srhsigman_e":2.131895e-21,
+				"srhsigmap_e":3.142822e-22,
+				"srhvth_e":100000.0,
+				"srhsigman_h":3.142822e-22,
+				"srhsigmap_h":2.131895e-21,
+				"srhvth_h":100000.0,
+				"srh_bands":5,
+				"Esteps":1000,
+				"dump_band_structure":0,
+				"dos_enable_auger":"False",
+				"dos_auger_Cn":1e-26,
+				"dos_auger_Cp":1e-26,
+				"Xi":1.6,
+				"Eg":1.3,
+				"epsilonr":5.0,
+				"id":"b1b3807a409cb2b8",
+				"exciton_enabled":"False",
+				"exciton_L":1e-08,
+				"exciton_tau":1e-10,
+				"exciton_kpl":4000000000.0,
+				"exciton_kfret":0.0,
+				"exciton_alpha":1e-13,
+				"exciton_kdis":100000000000.0,
+				"singlet_enabled":"False",
+				"singlet_k_fret":10000000000.0,
+				"singlet_k_s":80000000.0,
+				"singlet_k_isc":22000.0,
+				"singlet_k_ss":3.5e-18,
+				"singlet_k_sp":3e-10,
+				"singlet_k_st":1.9e-16,
+				"singlet_k_dext":10000000000.0,
+				"singlet_k_t":650.0,
+				"singlet_k_tp":2.8e-19,
+				"singlet_k_tt":2.2e-18,
+				"singlet_k_sd":1000000000.0,
+				"singlet_k_iscd":22000.0,
+				"singlet_k_spd":3e-16,
+				"singlet_k_std":1.9e-16,
+				"singlet_k_ssd":9.6e-19,
+				"singlet_k_td":660.0,
+				"singlet_k_ttd":2.4e-21,
+				"singlet_k_tpd":5.6e-19,
+				"singlet_zeta":1.4e-11,
+				"singlet_k_cav":1000000000000.0,
+				"singlet_beta_sp":0.0001,
+				"singlet_C":0.02,
+				"singlet_N_dop":4.2e+25,
+				"singlet_W":0.026
+				},
+			"shape_electrical": {
+				"enabled":"False",
+				"electrical_component":"resistance",
+				"electrical_shunt":1000000.0,
+				"electrical_symmetrical_resistance":"symmetric",
+				"electrical_series_z":0.2439,
+				"electrical_series_x":0.2439,
+				"electrical_series_y":1e-08,
+				"electrical_n":1.2,
+				"electrical_J0":5e-09,
+				"electrical_enable_generation":"False",
+				"id":"id02e5cb068613676c"
+				},
+			"color_r":0.8,
+			"color_g":0.8,
+			"color_b":0.8,
+			"color_alpha":0.8,
+			"optical_material":"oxides/ito",
+			"shape_pl": {
+				"pl_emission_enabled":"False",
+				"pl_use_experimental_emission_spectra":"False",
+				"pl_input_spectrum":"none",
+				"pl_experimental_emission_efficiency":1.0,
+				"pl_fe_fh":1.0,
+				"pl_fe_te":1.0,
+				"pl_te_fh":1.0,
+				"pl_th_fe":1.0,
+				"pl_fh_th":1.0,
+				"ray_theta_steps":200,
+				"ray_theta_start":0,
+				"ray_theta_stop":360,
+				"ray_phi_steps":5,
+				"ray_phi_start":0,
+				"ray_phi_stop":360,
+				"ray_emission_source":"ray_emission_single_point"
+				},
+			"shape_heat": {
+				"thermal_kl":1.0,
+				"thermal_tau_e":1.0,
+				"thermal_tau_h":1.0
+				},
+			"name":"ITO",
+			"Gnp":0.0,
+			"moveable":"False",
+			"html_link":"",
+			"label":"",
+			"id":"e4e1c4dc1b947b63",
+			"layer_type":"contact",
+			"layer_interface": {
+				"interface_model":"none",
+				"interface_eh_tau":1e-14,
+				"interface_tunnel_e":"False",
+				"interface_Ge":1e-15,
+				"interface_tunnel_h":"False",
+				"interface_Gh":1e-15,
+				"interface_left_doping_enabled":"False",
+				"interface_left_doping":1e+20,
+				"interface_right_doping_enabled":"False",
+				"interface_right_doping":1e+20
+				},
+			"solve_optical_problem":"True",
+			"solve_thermal_problem":"True",
+			"segments":0
+			},
+		"layer1": {
+			"enabled":"True",
+			"rotate_y":0,
+			"rotate_x":0,
+			"x0":0.0,
+			"z0":0.0,
+			"y0":1e-07,
+			"dx":0.0024495,
+			"dy":1e-07,
+			"dz":0.0024495,
+			"dx_padding":0.0,
+			"dy_padding":0.0,
+			"dz_padding":0.0,
+			"shape_nx":1,
+			"shape_ny":1,
+			"shape_nz":1,
+			"display_options": {
+				"show_solid":"True",
+				"show_mesh":"True",
+				"show_cut_through_x":"False",
+				"show_cut_through_y":"False",
+				"hidden":"False"
+				},
+			"shape_type":"box",
+			"shape_dos": {
+				"enabled":"False",
+				"symmetric_mobility_e":"symmetric",
+				"mue_z":1e-15,
+				"mue_x":1e-15,
+				"mue_y":1e-05,
+				"symmetric_mobility_h":"symmetric",
+				"muh_z":1e-15,
+				"muh_x":1e-15,
+				"muh_y":1e-05,
+				"Nc":5e+25,
+				"Nv":5e+25,
+				"free_to_free_recombination":0.0,
+				"dos_free_carrier_stats":"mb_equation",
+				"ss_srh_enabled":"False",
+				"srh_n1":1e+20,
+				"srh_p1":1e+20,
+				"srh_tau_n":1e-15,
+				"srh_tau_p":1e-15,
+				"dostype":"exponential",
+				"complex_lumo": {
+					"segments":2,
+					"function0": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						},
+					"function1": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						}
+					},
+				"complex_homo": {
+					"segments":2,
+					"function0": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						},
+					"function1": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						}
+					},
+				"Ntrape":1e+20,
+				"Ntraph":1e+20,
+				"Etrape":0.06,
+				"Etraph":0.06,
+				"ion_density":0.0,
+				"ion_mobility":0.0,
+				"doping_start":0.0,
+				"doping_stop":0.0,
+				"Na0":0.0,
+				"Na1":0.0,
+				"Nd0":0.0,
+				"Nd1":0.0,
+				"Tstart":300.0,
+				"Tstop":305.0,
+				"Tpoints":1,
+				"nstart":-2.5,
+				"nstop":1.0,
+				"npoints":1000,
+				"pstart":-2.5,
+				"pstop":1.0,
+				"ppoints":1000,
+				"srh_start":-0.5,
+				"srhsigman_e":2.131895e-21,
+				"srhsigmap_e":3.142822e-22,
+				"srhvth_e":100000.0,
+				"srhsigman_h":3.142822e-22,
+				"srhsigmap_h":2.131895e-21,
+				"srhvth_h":100000.0,
+				"srh_bands":5,
+				"Esteps":1000,
+				"dump_band_structure":0,
+				"dos_enable_auger":"False",
+				"dos_auger_Cn":1e-26,
+				"dos_auger_Cp":1e-26,
+				"Xi":1.6,
+				"Eg":1.3,
+				"epsilonr":5.0,
+				"id":"be2d5aecb1c48c6e",
+				"exciton_enabled":"False",
+				"exciton_L":1e-08,
+				"exciton_tau":1e-10,
+				"exciton_kpl":4000000000.0,
+				"exciton_kfret":0.0,
+				"exciton_alpha":1e-13,
+				"exciton_kdis":100000000000.0,
+				"singlet_enabled":"False",
+				"singlet_k_fret":10000000000.0,
+				"singlet_k_s":80000000.0,
+				"singlet_k_isc":22000.0,
+				"singlet_k_ss":3.5e-18,
+				"singlet_k_sp":3e-10,
+				"singlet_k_st":1.9e-16,
+				"singlet_k_dext":10000000000.0,
+				"singlet_k_t":650.0,
+				"singlet_k_tp":2.8e-19,
+				"singlet_k_tt":2.2e-18,
+				"singlet_k_sd":1000000000.0,
+				"singlet_k_iscd":22000.0,
+				"singlet_k_spd":3e-16,
+				"singlet_k_std":1.9e-16,
+				"singlet_k_ssd":9.6e-19,
+				"singlet_k_td":660.0,
+				"singlet_k_ttd":2.4e-21,
+				"singlet_k_tpd":5.6e-19,
+				"singlet_zeta":1.4e-11,
+				"singlet_k_cav":1000000000000.0,
+				"singlet_beta_sp":0.0001,
+				"singlet_C":0.02,
+				"singlet_N_dop":4.2e+25,
+				"singlet_W":0.026
+				},
+			"shape_electrical": {
+				"enabled":"False",
+				"electrical_component":"resistance",
+				"electrical_shunt":1000000.0,
+				"electrical_symmetrical_resistance":"symmetric",
+				"electrical_series_z":0.2439,
+				"electrical_series_x":0.2439,
+				"electrical_series_y":1e-08,
+				"electrical_n":1.2,
+				"electrical_J0":5e-09,
+				"electrical_enable_generation":"False",
+				"id":"id70e2a45a36e672ac"
+				},
+			"color_r":0.5647058823529412,
+			"color_g":0.5647058823529412,
+			"color_b":0.0392156862745098,
+			"color_alpha":0.8,
+			"optical_material":"polymers/pedotpss",
+			"shape_pl": {
+				"pl_emission_enabled":"False",
+				"pl_use_experimental_emission_spectra":"False",
+				"pl_input_spectrum":"none",
+				"pl_experimental_emission_efficiency":1.0,
+				"pl_fe_fh":1.0,
+				"pl_fe_te":1.0,
+				"pl_te_fh":1.0,
+				"pl_th_fe":1.0,
+				"pl_fh_th":1.0,
+				"ray_theta_steps":200,
+				"ray_theta_start":0,
+				"ray_theta_stop":360,
+				"ray_phi_steps":5,
+				"ray_phi_start":0,
+				"ray_phi_stop":360,
+				"ray_emission_source":"ray_emission_single_point"
+				},
+			"shape_heat": {
+				"thermal_kl":1.0,
+				"thermal_tau_e":1.0,
+				"thermal_tau_h":1.0
+				},
+			"name":"PEDOT:PSS",
+			"Gnp":1e+21,
+			"moveable":"False",
+			"html_link":"",
+			"label":"",
+			"id":"ba2739c16ed716cc",
+			"layer_type":"other",
+			"layer_interface": {
+				"interface_model":"none",
+				"interface_eh_tau":1e-15,
+				"interface_tunnel_e":"False",
+				"interface_Ge":1e-15,
+				"interface_tunnel_h":"False",
+				"interface_Gh":1e-15,
+				"interface_left_doping_enabled":"False",
+				"interface_left_doping":1e+20,
+				"interface_right_doping_enabled":"False",
+				"interface_right_doping":1e+20
+				},
+			"solve_optical_problem":"True",
+			"solve_thermal_problem":"True",
+			"segments":0
+			},
+		"layer2": {
+			"enabled":"True",
+			"rotate_y":0,
+			"rotate_x":0,
+			"x0":0.0,
+			"z0":0.0,
+			"y0":2e-07,
+			"dx":0.0024495,
+			"dy":2.2e-07,
+			"dz":0.0024495,
+			"dx_padding":0.0,
+			"dy_padding":0.0,
+			"dz_padding":0.0,
+			"shape_nx":1,
+			"shape_ny":1,
+			"shape_nz":1,
+			"display_options": {
+				"show_solid":"True",
+				"show_mesh":"True",
+				"show_cut_through_x":"False",
+				"show_cut_through_y":"False",
+				"hidden":"False"
+				},
+			"shape_type":"box",
+			"shape_dos": {
+				"enabled":"True",
+				"symmetric_mobility_e":"symmetric",
+				"mue_z":1e-15,
+				"mue_x":1e-15,
+				"mue_y":2.48e-07,
+				"symmetric_mobility_h":"symmetric",
+				"muh_z":1e-15,
+				"muh_x":1e-15,
+				"muh_y":2.48e-07,
+				"Nc":1.28e+27,
+				"Nv":2.86e+25,
+				"free_to_free_recombination":0.0,
+				"dos_free_carrier_stats":"mb_equation",
+				"ss_srh_enabled":"False",
+				"srh_n1":1e+20,
+				"srh_p1":1e+20,
+				"srh_tau_n":1e-15,
+				"srh_tau_p":1e-15,
+				"dostype":"exponential",
+				"complex_lumo": {
+					"segments":2,
+					"function0": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						},
+					"function1": {
+						"function":"gaus",
+						"function_enable":"True",
+						"function_a":4e+22,
+						"function_b":0.1,
+						"function_c":0.05
+						}
+					},
+				"complex_homo": {
+					"segments":2,
+					"function0": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						},
+					"function1": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						}
+					},
+				"Ntrape":3.8e+26,
+				"Ntraph":1.45e+25,
+				"Etrape":0.04,
+				"Etraph":0.06,
+				"ion_density":0.0,
+				"ion_mobility":0.0,
+				"doping_start":0.0,
+				"doping_stop":0.0,
+				"Na0":0.0,
+				"Na1":0.0,
+				"Nd0":0.0,
+				"Nd1":0.0,
+				"Tstart":300.0,
+				"Tstop":305.0,
+				"Tpoints":1,
+				"nstart":-3.5,
+				"nstop":1.0,
+				"npoints":1000,
+				"pstart":-3.5,
+				"pstop":1.0,
+				"ppoints":1000,
+				"srh_start":-0.8,
+				"srhsigman_e":2.5e-20,
+				"srhsigmap_e":1.32e-22,
+				"srhvth_e":100000.0,
+				"srhsigman_h":4.67e-26,
+				"srhsigmap_h":4.86e-22,
+				"srhvth_h":100000.0,
+				"srh_bands":20,
+				"Esteps":1000,
+				"dump_band_structure":0,
+				"dos_enable_auger":"False",
+				"dos_auger_Cn":1e-26,
+				"dos_auger_Cp":1e-26,
+				"Xi":3.8,
+				"Eg":1.1,
+				"epsilonr":3.8,
+				"id":"8db1a7c6ac815892",
+				"exciton_enabled":"False",
+				"exciton_L":1e-08,
+				"exciton_tau":1e-10,
+				"exciton_kpl":4000000000.0,
+				"exciton_kfret":0.0,
+				"exciton_alpha":1e-13,
+				"exciton_kdis":100000000000.0,
+				"singlet_enabled":"False",
+				"singlet_k_fret":10000000000.0,
+				"singlet_k_s":80000000.0,
+				"singlet_k_isc":22000.0,
+				"singlet_k_ss":3.5e-18,
+				"singlet_k_sp":3e-10,
+				"singlet_k_st":1.9e-16,
+				"singlet_k_dext":10000000000.0,
+				"singlet_k_t":650.0,
+				"singlet_k_tp":2.8e-19,
+				"singlet_k_tt":2.2e-18,
+				"singlet_k_sd":1000000000.0,
+				"singlet_k_iscd":22000.0,
+				"singlet_k_spd":3e-16,
+				"singlet_k_std":1.9e-16,
+				"singlet_k_ssd":9.6e-19,
+				"singlet_k_td":660.0,
+				"singlet_k_ttd":2.4e-21,
+				"singlet_k_tpd":5.6e-19,
+				"singlet_zeta":1.4e-11,
+				"singlet_k_cav":1000000000000.0,
+				"singlet_beta_sp":0.0001,
+				"singlet_C":0.02,
+				"singlet_N_dop":4.2e+25,
+				"singlet_W":0.026
+				},
+			"shape_electrical": {
+				"enabled":"False",
+				"electrical_component":"diode",
+				"electrical_shunt":1000000.0,
+				"electrical_symmetrical_resistance":"symmetric",
+				"electrical_series_z":0.2439,
+				"electrical_series_x":0.2439,
+				"electrical_series_y":1e-08,
+				"electrical_n":1.2,
+				"electrical_J0":5e-09,
+				"electrical_enable_generation":"False",
+				"id":"id395988b8df70d418"
+				},
+			"color_r":0.8196078431372549,
+			"color_g":0.0392156862745098,
+			"color_b":0.0392156862745098,
+			"color_alpha":0.8,
+			"optical_material":"blends/p3htpcbm",
+			"shape_pl": {
+				"pl_emission_enabled":"False",
+				"pl_use_experimental_emission_spectra":"False",
+				"pl_input_spectrum":"none",
+				"pl_experimental_emission_efficiency":1.1,
+				"pl_fe_fh":1.0,
+				"pl_fe_te":1.0,
+				"pl_te_fh":1.0,
+				"pl_th_fe":1.0,
+				"pl_fh_th":1.0,
+				"ray_theta_steps":200,
+				"ray_theta_start":0,
+				"ray_theta_stop":360,
+				"ray_phi_steps":5,
+				"ray_phi_start":0,
+				"ray_phi_stop":360,
+				"ray_emission_source":"ray_emission_single_point"
+				},
+			"shape_heat": {
+				"thermal_kl":1.0,
+				"thermal_tau_e":1.0,
+				"thermal_tau_h":1.0
+				},
+			"name":"P3HT:PCBM",
+			"Gnp":1e+22,
+			"moveable":"False",
+			"html_link":"",
+			"label":"",
+			"id":"dc5dba19338c3b78",
+			"layer_type":"active",
+			"layer_interface": {
+				"interface_model":"none",
+				"interface_eh_tau":1e-15,
+				"interface_tunnel_e":"False",
+				"interface_Ge":1e-15,
+				"interface_tunnel_h":"False",
+				"interface_Gh":1e-15,
+				"interface_left_doping_enabled":"False",
+				"interface_left_doping":1e+20,
+				"interface_right_doping_enabled":"False",
+				"interface_right_doping":1e+20
+				},
+			"solve_optical_problem":"True",
+			"solve_thermal_problem":"True",
+			"segments":0
+			},
+		"layer3": {
+			"enabled":"True",
+			"rotate_y":0,
+			"rotate_x":0,
+			"x0":0.0,
+			"z0":0.0,
+			"y0":4.2e-07,
+			"dx":0.0024495,
+			"dy":1e-07,
+			"dz":0.0024495,
+			"dx_padding":0.0,
+			"dy_padding":0.0,
+			"dz_padding":0.0,
+			"shape_nx":1,
+			"shape_ny":1,
+			"shape_nz":1,
+			"display_options": {
+				"show_solid":"True",
+				"show_mesh":"True",
+				"show_cut_through_x":"False",
+				"show_cut_through_y":"False",
+				"hidden":"False"
+				},
+			"shape_type":"box",
+			"shape_dos": {
+				"enabled":"False",
+				"symmetric_mobility_e":"symmetric",
+				"mue_z":1e-15,
+				"mue_x":1e-15,
+				"mue_y":1e-05,
+				"symmetric_mobility_h":"symmetric",
+				"muh_z":1e-15,
+				"muh_x":1e-15,
+				"muh_y":1e-05,
+				"Nc":5e+25,
+				"Nv":5e+25,
+				"free_to_free_recombination":0.0,
+				"dos_free_carrier_stats":"mb_equation",
+				"ss_srh_enabled":"False",
+				"srh_n1":1e+20,
+				"srh_p1":1e+20,
+				"srh_tau_n":1e-15,
+				"srh_tau_p":1e-15,
+				"dostype":"exponential",
+				"complex_lumo": {
+					"segments":2,
+					"function0": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						},
+					"function1": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						}
+					},
+				"complex_homo": {
+					"segments":2,
+					"function0": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						},
+					"function1": {
+						"function":"exp",
+						"function_enable":"True",
+						"function_a":4.207452e+20,
+						"function_b":0.1,
+						"function_c":0.0
+						}
+					},
+				"Ntrape":1e+20,
+				"Ntraph":1e+20,
+				"Etrape":0.06,
+				"Etraph":0.06,
+				"ion_density":0.0,
+				"ion_mobility":0.0,
+				"doping_start":0.0,
+				"doping_stop":0.0,
+				"Na0":0.0,
+				"Na1":0.0,
+				"Nd0":0.0,
+				"Nd1":0.0,
+				"Tstart":300.0,
+				"Tstop":305.0,
+				"Tpoints":1,
+				"nstart":-2.5,
+				"nstop":1.0,
+				"npoints":1000,
+				"pstart":-2.5,
+				"pstop":1.0,
+				"ppoints":1000,
+				"srh_start":-0.5,
+				"srhsigman_e":2.131895e-21,
+				"srhsigmap_e":3.142822e-22,
+				"srhvth_e":100000.0,
+				"srhsigman_h":3.142822e-22,
+				"srhsigmap_h":2.131895e-21,
+				"srhvth_h":100000.0,
+				"srh_bands":5,
+				"Esteps":1000,
+				"dump_band_structure":0,
+				"dos_enable_auger":"False",
+				"dos_auger_Cn":1e-26,
+				"dos_auger_Cp":1e-26,
+				"Xi":1.6,
+				"Eg":1.3,
+				"epsilonr":5.0,
+				"id":"1dbcad74dc45b6ec",
+				"exciton_enabled":"False",
+				"exciton_L":1e-08,
+				"exciton_tau":1e-10,
+				"exciton_kpl":4000000000.0,
+				"exciton_kfret":0.0,
+				"exciton_alpha":1e-13,
+				"exciton_kdis":100000000000.0,
+				"singlet_enabled":"False",
+				"singlet_k_fret":10000000000.0,
+				"singlet_k_s":80000000.0,
+				"singlet_k_isc":22000.0,
+				"singlet_k_ss":3.5e-18,
+				"singlet_k_sp":3e-10,
+				"singlet_k_st":1.9e-16,
+				"singlet_k_dext":10000000000.0,
+				"singlet_k_t":650.0,
+				"singlet_k_tp":2.8e-19,
+				"singlet_k_tt":2.2e-18,
+				"singlet_k_sd":1000000000.0,
+				"singlet_k_iscd":22000.0,
+				"singlet_k_spd":3e-16,
+				"singlet_k_std":1.9e-16,
+				"singlet_k_ssd":9.6e-19,
+				"singlet_k_td":660.0,
+				"singlet_k_ttd":2.4e-21,
+				"singlet_k_tpd":5.6e-19,
+				"singlet_zeta":1.4e-11,
+				"singlet_k_cav":1000000000000.0,
+				"singlet_beta_sp":0.0001,
+				"singlet_C":0.02,
+				"singlet_N_dop":4.2e+25,
+				"singlet_W":0.026
+				},
+			"shape_electrical": {
+				"enabled":"False",
+				"electrical_component":"resistance",
+				"electrical_shunt":1000000.0,
+				"electrical_symmetrical_resistance":"symmetric",
+				"electrical_series_z":0.2439,
+				"electrical_series_x":0.2439,
+				"electrical_series_y":1e-08,
+				"electrical_n":1.2,
+				"electrical_J0":5e-09,
+				"electrical_enable_generation":"False",
+				"id":"idffd6934b2e3603cf"
+				},
+			"color_r":0.8196078431372549,
+			"color_g":0.8196078431372549,
+			"color_b":0.8196078431372549,
+			"color_alpha":0.8,
+			"optical_material":"metal/al",
+			"shape_pl": {
+				"pl_emission_enabled":"False",
+				"pl_use_experimental_emission_spectra":"False",
+				"pl_input_spectrum":"none",
+				"pl_experimental_emission_efficiency":1.0,
+				"pl_fe_fh":1.0,
+				"pl_fe_te":1.0,
+				"pl_te_fh":1.0,
+				"pl_th_fe":1.0,
+				"pl_fh_th":1.0,
+				"ray_theta_steps":200,
+				"ray_theta_start":0,
+				"ray_theta_stop":360,
+				"ray_phi_steps":5,
+				"ray_phi_start":0,
+				"ray_phi_stop":360,
+				"ray_emission_source":"ray_emission_single_point"
+				},
+			"shape_heat": {
+				"thermal_kl":1.0,
+				"thermal_tau_e":1.0,
+				"thermal_tau_h":1.0
+				},
+			"name":"Al",
+			"Gnp":1e+21,
+			"moveable":"False",
+			"html_link":"",
+			"label":"",
+			"id":"656b505f112ec2d0",
+			"layer_type":"other",
+			"layer_interface": {
+				"interface_model":"none",
+				"interface_eh_tau":1e-15,
+				"interface_tunnel_e":"False",
+				"interface_Ge":1e-15,
+				"interface_tunnel_h":"False",
+				"interface_Gh":1e-15,
+				"interface_left_doping_enabled":"False",
+				"interface_left_doping":1e+20,
+				"interface_right_doping_enabled":"False",
+				"interface_right_doping":1e+20
+				},
+			"solve_optical_problem":"True",
+			"solve_thermal_problem":"True",
+			"segments":0
+			},
+		"contacts": {
+			"segments":2,
+			"segment0": {
+				"enabled":"True",
+				"rotate_y":0,
+				"rotate_x":0,
+				"x0":0.0,
+				"z0":0.0,
+				"y0":0.0,
+				"dx":5e-06,
+				"dy":1e-07,
+				"dz":0.0,
+				"dx_padding":0.0,
+				"dy_padding":0.0,
+				"dz_padding":0.0,
+				"shape_nx":1,
+				"shape_ny":1,
+				"shape_nz":1,
+				"display_options": {
+					"show_solid":"True",
+					"show_mesh":"True",
+					"show_cut_through_x":"False",
+					"show_cut_through_y":"False",
+					"hidden":"False"
+					},
+				"shape_type":"box",
+				"shape_dos": {
+					"enabled":"False",
+					"symmetric_mobility_e":"symmetric",
+					"mue_z":1e-15,
+					"mue_x":1e-15,
+					"mue_y":1e-05,
+					"symmetric_mobility_h":"symmetric",
+					"muh_z":1e-15,
+					"muh_x":1e-15,
+					"muh_y":1e-05,
+					"Nc":5e+25,
+					"Nv":5e+25,
+					"free_to_free_recombination":0.0,
+					"dos_free_carrier_stats":"mb_equation",
+					"ss_srh_enabled":"False",
+					"srh_n1":1e+20,
+					"srh_p1":1e+20,
+					"srh_tau_n":1e-15,
+					"srh_tau_p":1e-15,
+					"dostype":"exponential",
+					"complex_lumo": {
+						"segments":2,
+						"function0": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							},
+						"function1": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							}
+						},
+					"complex_homo": {
+						"segments":2,
+						"function0": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							},
+						"function1": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							}
+						},
+					"Ntrape":1e+20,
+					"Ntraph":1e+20,
+					"Etrape":0.06,
+					"Etraph":0.06,
+					"ion_density":0.0,
+					"ion_mobility":0.0,
+					"doping_start":0.0,
+					"doping_stop":0.0,
+					"Na0":0.0,
+					"Na1":0.0,
+					"Nd0":0.0,
+					"Nd1":0.0,
+					"Tstart":300.0,
+					"Tstop":305.0,
+					"Tpoints":1,
+					"nstart":-2.5,
+					"nstop":1.0,
+					"npoints":1000,
+					"pstart":-2.5,
+					"pstop":1.0,
+					"ppoints":1000,
+					"srh_start":-0.5,
+					"srhsigman_e":2.131895e-21,
+					"srhsigmap_e":3.142822e-22,
+					"srhvth_e":100000.0,
+					"srhsigman_h":3.142822e-22,
+					"srhsigmap_h":2.131895e-21,
+					"srhvth_h":100000.0,
+					"srh_bands":5,
+					"Esteps":1000,
+					"dump_band_structure":0,
+					"dos_enable_auger":"False",
+					"dos_auger_Cn":1e-26,
+					"dos_auger_Cp":1e-26,
+					"Xi":1.6,
+					"Eg":1.3,
+					"epsilonr":5.0,
+					"id":"0e109d6d75a5ebe4",
+					"exciton_enabled":"False",
+					"exciton_L":1e-08,
+					"exciton_tau":1e-10,
+					"exciton_kpl":4000000000.0,
+					"exciton_kfret":0.0,
+					"exciton_alpha":1e-13,
+					"exciton_kdis":100000000000.0,
+					"singlet_enabled":"False",
+					"singlet_k_fret":10000000000.0,
+					"singlet_k_s":80000000.0,
+					"singlet_k_isc":22000.0,
+					"singlet_k_ss":3.5e-18,
+					"singlet_k_sp":3e-10,
+					"singlet_k_st":1.9e-16,
+					"singlet_k_dext":10000000000.0,
+					"singlet_k_t":650.0,
+					"singlet_k_tp":2.8e-19,
+					"singlet_k_tt":2.2e-18,
+					"singlet_k_sd":1000000000.0,
+					"singlet_k_iscd":22000.0,
+					"singlet_k_spd":3e-16,
+					"singlet_k_std":1.9e-16,
+					"singlet_k_ssd":9.6e-19,
+					"singlet_k_td":660.0,
+					"singlet_k_ttd":2.4e-21,
+					"singlet_k_tpd":5.6e-19,
+					"singlet_zeta":1.4e-11,
+					"singlet_k_cav":1000000000000.0,
+					"singlet_beta_sp":0.0001,
+					"singlet_C":0.02,
+					"singlet_N_dop":4.2e+25,
+					"singlet_W":0.026
+					},
+				"shape_electrical": {
+					"enabled":"False",
+					"electrical_component":"resistance",
+					"electrical_shunt":1000000.0,
+					"electrical_symmetrical_resistance":"symmetric",
+					"electrical_series_z":0.2439,
+					"electrical_series_x":0.2439,
+					"electrical_series_y":1e-08,
+					"electrical_n":1.2,
+					"electrical_J0":5e-09,
+					"electrical_enable_generation":"False",
+					"id":"idc16c23ea209d11bc"
+					},
+				"color_r":0.0392156862745098,
+				"color_g":0.8196078431372549,
+				"color_b":0.0392156862745098,
+				"color_alpha":0.8,
+				"optical_material":"metal/au",
+				"shape_pl": {
+					"pl_emission_enabled":"False",
+					"pl_use_experimental_emission_spectra":"False",
+					"pl_input_spectrum":"none",
+					"pl_experimental_emission_efficiency":1.0,
+					"pl_fe_fh":1.0,
+					"pl_fe_te":1.0,
+					"pl_te_fh":1.0,
+					"pl_th_fe":1.0,
+					"pl_fh_th":1.0,
+					"ray_theta_steps":200,
+					"ray_theta_start":0,
+					"ray_theta_stop":360,
+					"ray_phi_steps":5,
+					"ray_phi_start":0,
+					"ray_phi_stop":360,
+					"ray_emission_source":"ray_emission_single_point"
+					},
+				"shape_heat": {
+					"thermal_kl":1.0,
+					"thermal_tau_e":1.0,
+					"thermal_tau_h":1.0
+					},
+				"name":"top",
+				"Gnp":0.0,
+				"moveable":"False",
+				"html_link":"",
+				"label":"",
+				"id":"73ead0005009d4f4",
+				"position":"top",
+				"applied_voltage_type":"change",
+				"applied_voltage":0.0,
+				"contact_resistance_sq":0.0,
+				"shunt_resistance_sq":0.0,
+				"np":5.8e+26,
+				"charge_type":"hole",
+				"physical_model":"ohmic",
+				"ve0":100000.0,
+				"vh0":100000.0
+				},
+			"segment1": {
+				"enabled":"True",
+				"rotate_y":0,
+				"rotate_x":0,
+				"x0":0.0,
+				"z0":2e-08,
+				"y0":0.0,
+				"dx":8e-05,
+				"dy":8e-07,
+				"dz":1e-07,
+				"dx_padding":0.0,
+				"dy_padding":0.0,
+				"dz_padding":0.0,
+				"shape_nx":1,
+				"shape_ny":1,
+				"shape_nz":1,
+				"display_options": {
+					"show_solid":"True",
+					"show_mesh":"True",
+					"show_cut_through_x":"False",
+					"show_cut_through_y":"False",
+					"hidden":"False"
+					},
+				"shape_type":"box",
+				"shape_dos": {
+					"enabled":"False",
+					"symmetric_mobility_e":"symmetric",
+					"mue_z":1e-15,
+					"mue_x":1e-15,
+					"mue_y":1e-05,
+					"symmetric_mobility_h":"symmetric",
+					"muh_z":1e-15,
+					"muh_x":1e-15,
+					"muh_y":1e-05,
+					"Nc":5e+25,
+					"Nv":5e+25,
+					"free_to_free_recombination":0.0,
+					"dos_free_carrier_stats":"mb_equation",
+					"ss_srh_enabled":"False",
+					"srh_n1":1e+20,
+					"srh_p1":1e+20,
+					"srh_tau_n":1e-15,
+					"srh_tau_p":1e-15,
+					"dostype":"exponential",
+					"complex_lumo": {
+						"segments":2,
+						"function0": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							},
+						"function1": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							}
+						},
+					"complex_homo": {
+						"segments":2,
+						"function0": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							},
+						"function1": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							}
+						},
+					"Ntrape":1e+20,
+					"Ntraph":1e+20,
+					"Etrape":0.06,
+					"Etraph":0.06,
+					"ion_density":0.0,
+					"ion_mobility":0.0,
+					"doping_start":0.0,
+					"doping_stop":0.0,
+					"Na0":0.0,
+					"Na1":0.0,
+					"Nd0":0.0,
+					"Nd1":0.0,
+					"Tstart":300.0,
+					"Tstop":305.0,
+					"Tpoints":1,
+					"nstart":-2.5,
+					"nstop":1.0,
+					"npoints":1000,
+					"pstart":-2.5,
+					"pstop":1.0,
+					"ppoints":1000,
+					"srh_start":-0.5,
+					"srhsigman_e":2.131895e-21,
+					"srhsigmap_e":3.142822e-22,
+					"srhvth_e":100000.0,
+					"srhsigman_h":3.142822e-22,
+					"srhsigmap_h":2.131895e-21,
+					"srhvth_h":100000.0,
+					"srh_bands":5,
+					"Esteps":1000,
+					"dump_band_structure":0,
+					"dos_enable_auger":"False",
+					"dos_auger_Cn":1e-26,
+					"dos_auger_Cp":1e-26,
+					"Xi":1.6,
+					"Eg":1.3,
+					"epsilonr":5.0,
+					"id":"6e89b65db3c0734c",
+					"exciton_enabled":"False",
+					"exciton_L":1e-08,
+					"exciton_tau":1e-10,
+					"exciton_kpl":4000000000.0,
+					"exciton_kfret":0.0,
+					"exciton_alpha":1e-13,
+					"exciton_kdis":100000000000.0,
+					"singlet_enabled":"False",
+					"singlet_k_fret":10000000000.0,
+					"singlet_k_s":80000000.0,
+					"singlet_k_isc":22000.0,
+					"singlet_k_ss":3.5e-18,
+					"singlet_k_sp":3e-10,
+					"singlet_k_st":1.9e-16,
+					"singlet_k_dext":10000000000.0,
+					"singlet_k_t":650.0,
+					"singlet_k_tp":2.8e-19,
+					"singlet_k_tt":2.2e-18,
+					"singlet_k_sd":1000000000.0,
+					"singlet_k_iscd":22000.0,
+					"singlet_k_spd":3e-16,
+					"singlet_k_std":1.9e-16,
+					"singlet_k_ssd":9.6e-19,
+					"singlet_k_td":660.0,
+					"singlet_k_ttd":2.4e-21,
+					"singlet_k_tpd":5.6e-19,
+					"singlet_zeta":1.4e-11,
+					"singlet_k_cav":1000000000000.0,
+					"singlet_beta_sp":0.0001,
+					"singlet_C":0.02,
+					"singlet_N_dop":4.2e+25,
+					"singlet_W":0.026
+					},
+				"shape_electrical": {
+					"enabled":"False",
+					"electrical_component":"resistance",
+					"electrical_shunt":1000000.0,
+					"electrical_symmetrical_resistance":"symmetric",
+					"electrical_series_z":0.2439,
+					"electrical_series_x":0.2439,
+					"electrical_series_y":1e-08,
+					"electrical_n":1.2,
+					"electrical_J0":5e-09,
+					"electrical_enable_generation":"False",
+					"id":"idfc239d841a634585"
+					},
+				"color_r":1.0,
+				"color_g":0.9215686274509803,
+				"color_b":0.043137254901960784,
+				"color_alpha":0.8,
+				"optical_material":"polymers/pedotpss",
+				"shape_pl": {
+					"pl_emission_enabled":"False",
+					"pl_use_experimental_emission_spectra":"False",
+					"pl_input_spectrum":"none",
+					"pl_experimental_emission_efficiency":1.0,
+					"pl_fe_fh":1.0,
+					"pl_fe_te":1.0,
+					"pl_te_fh":1.0,
+					"pl_th_fe":1.0,
+					"pl_fh_th":1.0,
+					"ray_theta_steps":200,
+					"ray_theta_start":0,
+					"ray_theta_stop":360,
+					"ray_phi_steps":5,
+					"ray_phi_start":0,
+					"ray_phi_stop":360,
+					"ray_emission_source":"ray_emission_single_point"
+					},
+				"shape_heat": {
+					"thermal_kl":1.0,
+					"thermal_tau_e":1.0,
+					"thermal_tau_h":1.0
+					},
+				"name":"btm",
+				"Gnp":0.0,
+				"moveable":"False",
+				"html_link":"",
+				"label":"",
+				"id":"c57975e42c48a69b",
+				"position":"bottom",
+				"applied_voltage_type":"constant",
+				"applied_voltage":0.0,
+				"contact_resistance_sq":0.0,
+				"shunt_resistance_sq":0.0,
+				"np":2.65e+25,
+				"charge_type":"electron",
+				"physical_model":"ohmic",
+				"ve0":100000.0,
+				"vh0":100000.0
+				}
+			}
+		},
+	"thermal": {
+		"thermal":"False",
+		"thermal_model_type":"thermal_lattice",
+		"thermal_l":"true",
+		"thermal_e":"false",
+		"thermal_h":"false",
+		"nofluxl":1,
+		"thermal_max_ittr":20,
+		"thermal_min_error":1e-07,
+		"joule_heating":"True",
+		"parasitic_heating":"True",
+		"thermal_couple_to_electrical_solver":"True",
+		"recombination_heating":"False",
+		"optical_heating":"False",
+		"dump_verbosity":1,
+		"solver_verbosity":"solver_verbosity_nothing"
+		},
+	"thermal_boundary": {
+		"Ty0_boundry":"neumann",
+		"Ty0":300.0,
+		"heatsink_y0":100.0,
+		"heatsink_length_y0":0.001,
+		"Ty1_boundry":"heatsink",
+		"Ty1":300.0,
+		"heatsink_y1":0.1,
+		"heatsink_length_y1":0.01,
+		"Tx0_boundry":"neumann",
+		"Tx0":300.0,
+		"heatsink_x0":0.1,
+		"heatsink_length_x0":0.1,
+		"Tx1_boundry":"neumann",
+		"Tx1":300.0,
+		"heatsink_x1":200,
+		"heatsink_length_x1":0.1,
+		"Tz0_boundry":"neumann",
+		"Tz0":300.0,
+		"heatsink_z0":200,
+		"heatsink_length_z0":0.1,
+		"Tz1_boundry":"neumann",
+		"Tz1":300.0,
+		"heatsink_z1":200,
+		"heatsink_length_z1":0.1
+		},
+	"exciton": {
+		"exciton_enabled":"False",
+		"exciton_max_ittr":20,
+		"exciton_min_error":1e-07,
+		"dump_verbosity":1,
+		"solver_verbosity":"solver_verbosity_nothing",
+		"segments":0
+		},
+	"exciton_boundary": {
+		"y0_boundry":"neumann",
+		"n_y0":1e+24,
+		"excitonsink_y0":100.0,
+		"excitonsink_length_y0":0.001,
+		"y1_boundry":"heatsink",
+		"n_y1":1e+24,
+		"excitonsink_y1":0.1,
+		"excitonsink_length_y1":0.01,
+		"x0_boundry":"neumann",
+		"n_x0":1e+24,
+		"excitonsink_x0":0.1,
+		"excitonsink_length_x0":0.1,
+		"x1_boundry":"neumann",
+		"n_x1":1e+24,
+		"excitonsink_x1":200,
+		"excitonsink_length_x1":0.1,
+		"z0_boundry":"neumann",
+		"n_z0":1e+24,
+		"excitonsink_z0":200,
+		"excitonsink_length_z0":0.1,
+		"z1_boundry":"neumann",
+		"n_z1":1e+24,
+		"excitonsink_z1":200,
+		"excitonsink_length_z1":0.1
+		},
+	"ray": {
+		"segments":1,
+		"segment0": {
+			"name":"Ray\ntrace",
+			"icon":"ray",
+			"config": {
+				"ray_wavelength_points":100,
+				"ray_auto_wavelength_range":"true",
+				"ray_lambda_start":3e-07,
+				"ray_lambda_stop":7e-07,
+				"ray_auto_run":"ray_run_once",
+				"ray_escape_bins":20
+				}
+			}
+		},
+	"suns_voc": {
+		"segments":1,
+		"segment0": {
+			"name":"Suns\nVoc",
+			"icon":"sunsvoc",
+			"sun_voc_single_point":"False",
+			"sun_voc_Psun_start":0.11,
+			"sun_voc_Psun_stop":1.1,
+			"sun_voc_Psun_mul":1.2,
+			"dump_verbosity":1
+			}
+		},
+	"suns_jsc": {
+		"segments":1,
+		"segment0": {
+			"name":"Suns\nJsc",
+			"icon":"sunsjsc",
+			"sunstart":0.01,
+			"sunstop":10.0,
+			"sundp":0.01,
+			"sundpmul":1.05
+			}
+		},
+	"ce": {
+		"segments":1,
+		"segment0": {
+			"name":"Charge\nExtraction",
+			"icon":"ce",
+			"ce_start_sun":0.01,
+			"ce_stop_sun":10.0,
+			"ce_number_of_simulations":10.0,
+			"ce_on_time":1e-06,
+			"ce_off_time":1.0,
+			"dump_verbosity":1,
+			"load_type":"open_circuit",
+			"dump_screen_verbosity":"dump_verbosity_key_results"
+			}
+		},
+	"transfer_matrix": {
+		"segments":1,
+		"segment0": {
+			"name":"Transfer\nmatrx",
+			"icon":"optics2"
+			}
+		},
+	"pl_ss": {
+		"segments":1,
+		"segment0": {
+			"name":"PL",
+			"icon":"pl",
+			"config": {
+				"pl_mode":"voc",
+				"pump_laser":"green"
+				},
+			"id":"ida0b8d7f9cd123423"
+			}
+		},
+	"eqe": {
+		"segments":1,
+		"segment0": {
+			"name":"EQE",
+			"icon":"qe",
+			"eqe_voltage":-20.0,
+			"eqe_light_power2":1.0,
+			"id":"ida07e0f092201a0c2"
+			}
+		},
+	"fdtd": {
+		"segments":1,
+		"segment0": {
+			"name":"FDTD (beta)",
+			"icon":"fdtd",
+			"fdtd_excitation_type":"sin",
+			"fdtd_lambda_start":5.2e-07,
+			"fdtd_lambda_stop":7e-07,
+			"fdtd_lambda_points":1,
+			"fdtd_pulse_length":100,
+			"fdtd_excite_Ex":"False",
+			"fdtd_excite_Ey":"True",
+			"fdtd_excite_Ez":"False",
+			"fdtd_max_time":0.1,
+			"fdtd_max_steps":10000,
+			"lam_jmax":12,
+			"fdtd_xzy":"zy",
+			"fdtd_zlen":60,
+			"fdtd_xlen":1,
+			"fdtd_ylen":60,
+			"use_gpu":"False",
+			"id":"idc0ddaaef277be5c9"
+			}
+		},
+	"fits": {
+		"fit_config": {
+			"fit_randomize":"False",
+			"fit_random_reset_ittr":400,
+			"fit_stall_steps":400,
+			"fit_disable_reset_at":0.095,
+			"fit_converge_error":0.001,
+			"fit_enable_simple_reset":"True",
+			"fit_simplexmul":0.05,
+			"fit_simplex_reset":200,
+			"fit_method":"simplex"
+			},
+		"duplicate": {
+			"segments":5,
+			"segment0": {
+				"duplicate_var_enabled":"True",
+				"human_src":"epitaxy/PM6:Y6/Drift diffusion/Electron mobility y",
+				"human_dest":"epitaxy/PM6:Y6/Drift diffusion/Hole mobility y",
+				"multiplier":"x",
+				"json_src":"epitaxy/layer2/shape_dos/mue_y",
+				"json_dest":"epitaxy/layer2/shape_dos/muh_y"
+				},
+			"segment1": {
+				"duplicate_var_enabled":"True",
+				"human_src":"epitaxy/PM6:Y6/Drift diffusion/Electron trap density",
+				"human_dest":"epitaxy/PM6:Y6/Drift diffusion/Hole trap density",
+				"multiplier":"x",
+				"json_src":"epitaxy/layer2/shape_dos/Ntrape",
+				"json_dest":"epitaxy/layer2/shape_dos/Ntraph"
+				},
+			"segment2": {
+				"duplicate_var_enabled":"True",
+				"human_src":"epitaxy/PM6:Y6/Drift diffusion/Electron tail slope",
+				"human_dest":"epitaxy/PM6:Y6/Drift diffusion/Hole tail slope",
+				"multiplier":"x",
+				"json_src":"epitaxy/layer2/shape_dos/Etrape",
+				"json_dest":"epitaxy/layer2/shape_dos/Etraph"
+				},
+			"segment3": {
+				"duplicate_var_enabled":"True",
+				"human_src":"epitaxy/PM6:Y6/Drift diffusion/Free electron to Trapped electron",
+				"human_dest":"epitaxy/PM6:Y6/Drift diffusion/Free hole to Trapped hole",
+				"multiplier":"x",
+				"json_src":"epitaxy/layer2/shape_dos/srhsigman_e",
+				"json_dest":"epitaxy/layer2/shape_dos/srhsigmap_h"
+				},
+			"segment4": {
+				"duplicate_var_enabled":"True",
+				"human_src":"epitaxy/PM6:Y6/Drift diffusion/Trapped electron to Free hole",
+				"human_dest":"epitaxy/PM6:Y6/Drift diffusion/Trapped hole to Free electron",
+				"multiplier":"x",
+				"json_src":"epitaxy/layer2/shape_dos/srhsigmap_e",
+				"json_dest":"epitaxy/layer2/shape_dos/srhsigman_h"
+				}
+			},
+		"vars": {
+			"segments":12,
+			"segment0": {
+				"fit_var_enabled":"True",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Electron mobility y",
+				"json_var":"epitaxy/layer2/shape_dos/mue_y",
+				"min":1e-10,
+				"max":0.1,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment1": {
+				"fit_var_enabled":"False",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Hole mobility y",
+				"json_var":"epitaxy/layer2/shape_dos/muh_y",
+				"min":1e-10,
+				"max":0.1,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment2": {
+				"fit_var_enabled":"True",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Electron trap density",
+				"json_var":"epitaxy/layer2/shape_dos/Ntrape",
+				"min":10000000000.0,
+				"max":1e+28,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment3": {
+				"fit_var_enabled":"False",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Hole trap density",
+				"json_var":"epitaxy/layer2/shape_dos/Ntraph",
+				"min":10000000000.0,
+				"max":1e+28,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment4": {
+				"fit_var_enabled":"True",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Electron tail slope",
+				"json_var":"epitaxy/layer2/shape_dos/Etrape",
+				"min":0.03,
+				"max":100.0,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment5": {
+				"fit_var_enabled":"False",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Hole tail slope",
+				"json_var":"epitaxy/layer2/shape_dos/Etraph",
+				"min":0.03,
+				"max":100.0,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment6": {
+				"fit_var_enabled":"True",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Free electron to Trapped electron",
+				"json_var":"epitaxy/layer2/shape_dos/srhsigman_e",
+				"min":1e-25,
+				"max":1e-18,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment7": {
+				"fit_var_enabled":"True",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Trapped electron to Free hole",
+				"json_var":"epitaxy/layer2/shape_dos/srhsigmap_e",
+				"min":1e-25,
+				"max":1e-18,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment8": {
+				"fit_var_enabled":"False",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Trapped hole to Free electron",
+				"json_var":"epitaxy/layer2/shape_dos/srhsigman_h",
+				"min":1e-25,
+				"max":1e-18,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment9": {
+				"fit_var_enabled":"False",
+				"human_var":"epitaxy/PM6:Y6/Drift diffusion/Free hole to Trapped hole",
+				"json_var":"epitaxy/layer2/shape_dos/srhsigmap_h",
+				"min":1e-25,
+				"max":1e-18,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment10": {
+				"fit_var_enabled":"True",
+				"human_var":"parasitic/Shunt resistance",
+				"json_var":"parasitic/Rshunt",
+				"min":0.1,
+				"max":1000000.0,
+				"log_fit":"False",
+				"error":100.0
+				},
+			"segment11": {
+				"fit_var_enabled":"False",
+				"human_var":"parasitic/Series resistance",
+				"json_var":"parasitic/Rcontact",
+				"min":0.1,
+				"max":100.0,
+				"log_fit":"False",
+				"error":100.0
+				}
+			},
+		"rules": {
+			"segments":1,
+			"segment0": {
+				"fit_rule_enabled":"False",
+				"human_x":"epitaxy/PM6:Y6/Drift diffusion/Electron tail slope",
+				"human_y":"epitaxy/PM6:Y6/Drift diffusion/Hole tail slope",
+				"function":"(x>y)*100.0",
+				"json_x":"epitaxy/layer2/shape_dos/Etrape",
+				"json_y":"epitaxy/layer2/shape_dos/Etraph"
+				}
+			},
+		"fits": {
+			"data_sets":8,
+			"data_set0": {
+				"fit_patch": {
+					"segments":4,
+					"segment0": {
+						"json_path":"sim/simmode",
+						"human_path":"sim/simmode",
+						"val":"segment0@jv"
+						},
+					"segment1": {
+						"json_path":"light/Psun",
+						"human_path":"light/Psun",
+						"val":"0.0"
+						},
+					"segment2": {
+						"json_path":"math/solver_verbosity",
+						"human_path":"math/Solver output verbosity",
+						"val":"0"
+						},
+					"segment3": {
+						"json_path":"jv/segment0/config/dump_verbosity",
+						"human_path":"jv/segment0/config/Ouput verbosity to disk",
+						"val":"0"
+						}
+					},
+				"config": {
+					"enabled":"True",
+					"plugin":"fit_stark",
+					"fit_name":"charge_dark",
+					"fit_error_mul":1.0,
+					"time_shift":0.0,
+					"fit_shift_y":0.0,
+					"start":0.1,
+					"stop":0.8,
+					"sim_data":"charge.dat",
+					"log_x":"False",
+					"log_y":"True",
+					"log_y_keep_sign":"False",
+					"fit_invert_simulation_y":"False",
+					"fit_subtract_lowest_point":"True",
+					"fit_set_first_point_to_zero":"False",
+					"fit_set_error_to_zero_before":-100.0,
+					"fit_hidden":"False",
+					"fit_against":"self"
+					},
+				"import_config": {
+					"import_file_path":"/home/rod/Desktop/p3ht_pcbm/charge_density_dark.dat",
+					"import_x_combo_pos":9,
+					"import_data_combo_pos":19,
+					"import_x_spin":0,
+					"import_data_spin":1,
+					"import_title":"Voltage - Charge density",
+					"import_xlabel":"Voltage",
+					"import_data_label":"Charge density",
+					"import_area":0.104,
+					"import_data_invert":"False",
+					"import_x_invert":"False",
+					"data_file":"fit_data0.inp"
+					},
+				"id":"6fad0d9beac1e8e4"
+				},
+			"data_set1": {
+				"fit_patch": {
+					"segments":4,
+					"segment0": {
+						"json_path":"sim/simmode",
+						"human_path":"sim/simmode",
+						"val":"segment0@jv"
+						},
+					"segment1": {
+						"json_path":"light/Psun",
+						"human_path":"light/Psun",
+						"val":"1.0"
+						},
+					"segment2": {
+						"json_path":"math/solver_verbosity",
+						"human_path":"math/Solver output verbosity",
+						"val":"0"
+						},
+					"segment3": {
+						"json_path":"jv/segment0/config/dump_verbosity",
+						"human_path":"jv/segment0/config/Ouput verbosity to disk",
+						"val":"0"
+						}
+					},
+				"config": {
+					"enabled":"True",
+					"plugin":"fit_stark",
+					"fit_name":"charge_light",
+					"fit_error_mul":1.0,
+					"time_shift":0.0,
+					"fit_shift_y":0.0,
+					"start":0.1,
+					"stop":0.7,
+					"sim_data":"charge.dat",
+					"log_x":"False",
+					"log_y":"True",
+					"log_y_keep_sign":"False",
+					"fit_invert_simulation_y":"False",
+					"fit_subtract_lowest_point":"True",
+					"fit_set_first_point_to_zero":"False",
+					"fit_set_error_to_zero_before":-100.0,
+					"fit_hidden":"False",
+					"fit_against":"self"
+					},
+				"import_config": {
+					"import_file_path":"/home/rod/Desktop/p3ht_pcbm/charge_density_light.dat",
+					"import_x_combo_pos":9,
+					"import_data_combo_pos":19,
+					"import_x_spin":0,
+					"import_data_spin":1,
+					"import_title":"Voltage - Charge density",
+					"import_xlabel":"Voltage",
+					"import_data_label":"Charge density",
+					"import_area":0.104,
+					"import_data_invert":"False",
+					"import_x_invert":"False",
+					"data_file":"fit_data1.inp"
+					},
+				"id":"3266a3792fc6e184"
+				},
+			"data_set2": {
+				"fit_patch": {
+					"segments":4,
+					"segment0": {
+						"json_path":"sim/simmode",
+						"human_path":"sim/simmode",
+						"val":"segment0@jv"
+						},
+					"segment1": {
+						"json_path":"light/Psun",
+						"human_path":"light/Psun",
+						"val":"0.0"
+						},
+					"segment2": {
+						"json_path":"math/solver_verbosity",
+						"human_path":"math/Solver output verbosity",
+						"val":"0"
+						},
+					"segment3": {
+						"json_path":"jv/segment0/config/dump_verbosity",
+						"human_path":"jv/segment0/config/Ouput verbosity to disk",
+						"val":"0"
+						}
+					},
+				"config": {
+					"enabled":"True",
+					"plugin":"fit_stark",
+					"fit_name":"dark_jv",
+					"fit_error_mul":1.0,
+					"time_shift":0.0,
+					"fit_shift_y":0.0,
+					"start":0.0,
+					"stop":1.1,
+					"sim_data":"jv.dat",
+					"log_x":"False",
+					"log_y":"True",
+					"log_y_keep_sign":"False",
+					"fit_invert_simulation_y":"False",
+					"fit_subtract_lowest_point":"False",
+					"fit_set_first_point_to_zero":"False",
+					"fit_set_error_to_zero_before":-100.0,
+					"fit_hidden":"False",
+					"fit_against":"self"
+					},
+				"import_config": {
+					"import_file_path":"/home/rod/Desktop/p3ht_pcbm/dark_jv.dat",
+					"import_x_combo_pos":9,
+					"import_data_combo_pos":6,
+					"import_x_spin":0,
+					"import_data_spin":1,
+					"import_title":"Voltage - J",
+					"import_xlabel":"Voltage",
+					"import_data_label":"J",
+					"import_area":0.104,
+					"import_data_invert":"False",
+					"import_x_invert":"False",
+					"data_file":"fit_data2.inp"
+					},
+				"id":"877e2463a8ac1c76"
+				},
+			"data_set3": {
+				"fit_patch": {
+					"segments":4,
+					"segment0": {
+						"json_path":"sim/simmode",
+						"human_path":"sim/simmode",
+						"val":"segment0@jv"
+						},
+					"segment1": {
+						"json_path":"light/Psun",
+						"human_path":"light/Psun",
+						"val":"1.0"
+						},
+					"segment2": {
+						"json_path":"math/solver_verbosity",
+						"human_path":"math/Solver output verbosity",
+						"val":"0"
+						},
+					"segment3": {
+						"json_path":"jv/segment0/config/dump_verbosity",
+						"human_path":"jv/segment0/config/Ouput verbosity to disk",
+						"val":"0"
+						}
+					},
+				"config": {
+					"enabled":"True",
+					"plugin":"fit_stark",
+					"fit_name":"light_jv",
+					"fit_error_mul":1.0,
+					"time_shift":0.0,
+					"fit_shift_y":0.0,
+					"start":0.001,
+					"stop":0.7,
+					"sim_data":"jv.dat",
+					"log_x":"False",
+					"log_y":"False",
+					"log_y_keep_sign":"False",
+					"fit_invert_simulation_y":"False",
+					"fit_subtract_lowest_point":"False",
+					"fit_set_first_point_to_zero":"False",
+					"fit_set_error_to_zero_before":-100.0,
+					"fit_hidden":"False",
+					"fit_against":"self"
+					},
+				"import_config": {
+					"import_file_path":"/home/rod/Desktop/p3ht_pcbm/light_jv.dat",
+					"import_x_combo_pos":9,
+					"import_data_combo_pos":6,
+					"import_x_spin":0,
+					"import_data_spin":1,
+					"import_title":"Voltage - J",
+					"import_xlabel":"Voltage",
+					"import_data_label":"J",
+					"import_area":0.104,
+					"import_data_invert":"False",
+					"import_x_invert":"False",
+					"data_file":"fit_data3.inp"
+					},
+				"id":"44ff8b04b26e10b5"
+				},
+			"data_set4": {
+				"fit_patch": {
+					"segments":5,
+					"segment0": {
+						"json_path":"sim/simmode",
+						"human_path":"sim/simmode",
+						"val":"segment3@time_domain"
+						},
+					"segment1": {
+						"json_path":"light/Psun",
+						"human_path":"light/Psun",
+						"val":"0.0"
+						},
+					"segment2": {
+						"json_path":"math/solver_verbosity",
+						"human_path":"math/Solver output verbosity",
+						"val":"0"
+						},
+					"segment3": {
+						"json_path":"jv/segment0/config/dump_verbosity",
+						"human_path":"jv/segment0/config/Ouput verbosity to disk",
+						"val":"0"
+						},
+					"segment4": {
+						"json_path":"time_domain/segment3/config/dump_verbosity",
+						"human_path":"time_domain/segment3/config/Ouput verbosity to disk",
+						"val":"0"
+						}
+					},
+				"config": {
+					"enabled":"True",
+					"plugin":"fit_stark",
+					"fit_name":"tpc_1sun_400mV",
+					"fit_error_mul":1.0,
+					"time_shift":0.0,
+					"fit_shift_y":0.0,
+					"start":1e-09,
+					"stop":1.0,
+					"sim_data":"time_j.dat",
+					"log_x":"True",
+					"log_y":"True",
+					"log_y_keep_sign":"False",
+					"fit_invert_simulation_y":"True",
+					"fit_subtract_lowest_point":"False",
+					"fit_set_first_point_to_zero":"False",
+					"fit_set_error_to_zero_before":-100.0,
+					"fit_hidden":"False",
+					"fit_against":"self"
+					},
+				"import_config": {
+					"import_file_path":"/home/rod/Desktop/p3ht_pcbm/tpc_1sun_400mV.dat",
+					"import_x_combo_pos":16,
+					"import_data_combo_pos":6,
+					"import_x_spin":0,
+					"import_data_spin":1,
+					"import_title":"Time - J",
+					"import_xlabel":"Time",
+					"import_data_label":"J",
+					"import_area":0.104,
+					"import_data_invert":"False",
+					"import_x_invert":"False",
+					"data_file":"fit_data4.inp"
+					},
+				"id":"4a693da65e227605"
+				},
+			"data_set5": {
+				"fit_patch": {
+					"segments":4,
+					"segment0": {
+						"json_path":"sim/simmode",
+						"human_path":"sim/simmode",
+						"val":"segment4@time_domain"
+						},
+					"segment1": {
+						"json_path":"light/Psun",
+						"human_path":"light/Psun",
+						"val":"0.0"
+						},
+					"segment2": {
+						"json_path":"math/solver_verbosity",
+						"human_path":"math/Solver output verbosity",
+						"val":"0"
+						},
+					"segment3": {
+						"json_path":"time_domain/segment4/config/dump_verbosity",
+						"human_path":"time_domain/segment4/config/Ouput verbosity to disk",
+						"val":"0"
+						}
+					},
+				"config": {
+					"enabled":"True",
+					"plugin":"fit_stark",
+					"fit_name":"tpc_1sun_50mV",
+					"fit_error_mul":1.0,
+					"time_shift":0.0,
+					"fit_shift_y":0.0,
+					"start":1e-09,
+					"stop":1.0,
+					"sim_data":"time_j.dat",
+					"log_x":"True",
+					"log_y":"True",
+					"log_y_keep_sign":"False",
+					"fit_invert_simulation_y":"True",
+					"fit_subtract_lowest_point":"False",
+					"fit_set_first_point_to_zero":"False",
+					"fit_set_error_to_zero_before":-100.0,
+					"fit_hidden":"False",
+					"fit_against":"self"
+					},
+				"import_config": {
+					"import_file_path":"/home/rod/Desktop/p3ht_pcbm/tpc_1sun_50mV.dat",
+					"import_x_combo_pos":16,
+					"import_data_combo_pos":6,
+					"import_x_spin":0,
+					"import_data_spin":1,
+					"import_title":"Time - J",
+					"import_xlabel":"Time",
+					"import_data_label":"J",
+					"import_area":0.104,
+					"import_data_invert":"False",
+					"import_x_invert":"False",
+					"data_file":"fit_data5.inp"
+					},
+				"id":"25ed48ed29dc0018"
+				},
+			"data_set6": {
+				"fit_patch": {
+					"segments":4,
+					"segment0": {
+						"json_path":"sim/simmode",
+						"human_path":"sim/simmode",
+						"val":"segment2@time_domain"
+						},
+					"segment1": {
+						"json_path":"light/Psun",
+						"human_path":"light/Psun",
+						"val":"0.0"
+						},
+					"segment2": {
+						"json_path":"math/solver_verbosity",
+						"human_path":"math/Solver output verbosity",
+						"val":"0"
+						},
+					"segment3": {
+						"json_path":"time_domain/segment2/config/dump_verbosity",
+						"human_path":"time_domain/segment2/config/Ouput verbosity to disk",
+						"val":"0"
+						}
+					},
+				"config": {
+					"enabled":"True",
+					"plugin":"fit_stark",
+					"fit_name":"tpc_dark_0V",
+					"fit_error_mul":1.0,
+					"time_shift":0.0,
+					"fit_shift_y":0.0,
+					"start":1e-09,
+					"stop":1.0,
+					"sim_data":"time_j.dat",
+					"log_x":"True",
+					"log_y":"True",
+					"log_y_keep_sign":"False",
+					"fit_invert_simulation_y":"True",
+					"fit_subtract_lowest_point":"False",
+					"fit_set_first_point_to_zero":"False",
+					"fit_set_error_to_zero_before":-100.0,
+					"fit_hidden":"False",
+					"fit_against":"self"
+					},
+				"import_config": {
+					"import_file_path":"/home/rod/Desktop/p3ht_pcbm/tpc_dark_0V.dat",
+					"import_x_combo_pos":16,
+					"import_data_combo_pos":6,
+					"import_x_spin":0,
+					"import_data_spin":1,
+					"import_title":"Time - J",
+					"import_xlabel":"Time",
+					"import_data_label":"J",
+					"import_area":0.104,
+					"import_data_invert":"False",
+					"import_x_invert":"False",
+					"data_file":"fit_data6.inp"
+					},
+				"id":"9f58ebfbffc133fc"
+				},
+			"data_set7": {
+				"fit_patch": {
+					"segments":4,
+					"segment0": {
+						"json_path":"sim/simmode",
+						"human_path":"sim/simmode",
+						"val":"segment6@time_domain"
+						},
+					"segment1": {
+						"json_path":"light/Psun",
+						"human_path":"light/Psun",
+						"val":"0.0"
+						},
+					"segment2": {
+						"json_path":"math/solver_verbosity",
+						"human_path":"math/Solver output verbosity",
+						"val":"0"
+						},
+					"segment3": {
+						"json_path":"time_domain/segment6/config/dump_verbosity",
+						"human_path":"time_domain/segment6/config/Ouput verbosity to disk",
+						"val":"0"
+						}
+					},
+				"config": {
+					"enabled":"True",
+					"plugin":"fit_stark",
+					"fit_name":"tpc_dark_400mV",
+					"fit_error_mul":1.0,
+					"time_shift":0.0,
+					"fit_shift_y":0.0,
+					"start":1e-09,
+					"stop":1.0,
+					"sim_data":"time_j.dat",
+					"log_x":"True",
+					"log_y":"True",
+					"log_y_keep_sign":"False",
+					"fit_invert_simulation_y":"True",
+					"fit_subtract_lowest_point":"False",
+					"fit_set_first_point_to_zero":"False",
+					"fit_set_error_to_zero_before":-100.0,
+					"fit_hidden":"False",
+					"fit_against":"self"
+					},
+				"import_config": {
+					"import_file_path":"/home/rod/Desktop/p3ht_pcbm/tpc_dark_400mV.dat",
+					"import_x_combo_pos":16,
+					"import_data_combo_pos":6,
+					"import_x_spin":0,
+					"import_data_spin":1,
+					"import_title":"Time - J",
+					"import_xlabel":"Time",
+					"import_data_label":"J",
+					"import_area":0.104,
+					"import_data_invert":"False",
+					"import_x_invert":"False",
+					"data_file":"fit_data7.inp"
+					},
+				"id":"f8736244c1541293"
+				}
+			}
+		},
+	"mesh": {
+		"config": {
+			"remesh_x":"False",
+			"remesh_y":"False",
+			"remesh_z":"False"
+			},
+		"mesh_x": {
+			"enabled":"False",
+			"segments":1,
+			"segment0": {
+				"len":0.0024495,
+				"points":1.0,
+				"mul":1.0,
+				"left_right":"left"
+				}
+			},
+		"mesh_y": {
+			"enabled":"True",
+			"segments":1,
+			"segment0": {
+				"len":2.2e-07,
+				"points":5.0,
+				"mul":1.0,
+				"left_right":"left"
+				}
+			},
+		"mesh_z": {
+			"enabled":"False",
+			"segments":1,
+			"segment0": {
+				"len":0.0024495,
+				"points":1.0,
+				"mul":1.0,
+				"left_right":"left"
+				}
+			}
+		},
+	"time_domain": {
+		"segments":7,
+		"segment0": {
+			"name":"CELIV",
+			"icon":"celiv",
+			"config": {
+				"pulse_shift":5e-06,
+				"load_type":"load",
+				"pulse_L":0.0,
+				"Rload":50,
+				"pump_laser":"green",
+				"pulse_bias":0.0,
+				"pulse_light_efficiency":1.0,
+				"pulse_subtract_dc":"false",
+				"start_time":-4e-12,
+				"fs_laser_time":-1.0,
+				"dump_verbosity":5,
+				"dump_energy_space":"false",
+				"dump_x":0,
+				"dump_y":0,
+				"dump_z":0
+				},
+			"mesh": {
+				"segments":4,
+				"segment0": {
+					"len":1e-05,
+					"dt":5e-07,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment1": {
+					"len":8e-06,
+					"dt":5e-07,
+					"voltage_start":0.0,
+					"voltage_stop":-2.24,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment2": {
+					"len":1e-05,
+					"dt":5e-07,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment3": {
+					"len":1e-07,
+					"dt":5e-07,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					}
+				},
+			"id":"id5cf0a9e64c8050d3"
+			},
+		"segment1": {
+			"name":"PHOTO\nCELIV",
+			"icon":"photo_celiv",
+			"config": {
+				"pulse_shift":5e-06,
+				"load_type":"load",
+				"pulse_L":0.0,
+				"Rload":50,
+				"pump_laser":"green",
+				"pulse_bias":0.0,
+				"pulse_light_efficiency":1.0,
+				"pulse_subtract_dc":"false",
+				"start_time":-4e-12,
+				"fs_laser_time":1e-06,
+				"dump_verbosity":5,
+				"dump_energy_space":"false",
+				"dump_x":0,
+				"dump_y":0,
+				"dump_z":0
+				},
+			"mesh": {
+				"segments":4,
+				"segment0": {
+					"len":1e-05,
+					"dt":5e-07,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment1": {
+					"len":8e-06,
+					"dt":2e-07,
+					"voltage_start":0.0,
+					"voltage_stop":-5.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment2": {
+					"len":1e-07,
+					"dt":5e-09,
+					"voltage_start":-5.0,
+					"voltage_stop":0.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment3": {
+					"len":8e-06,
+					"dt":5e-07,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					}
+				},
+			"id":"id4de8d4abc0bd4d3f"
+			},
+		"segment2": {
+			"name":"TPC 0V\nDARK",
+			"icon":"tpc",
+			"config": {
+				"pulse_shift":5e-06,
+				"load_type":"load",
+				"pulse_L":0.0,
+				"Rload":50,
+				"pump_laser":"green",
+				"pulse_bias":0.0,
+				"pulse_light_efficiency":1.0,
+				"pulse_subtract_dc":"True",
+				"start_time":-1e-08,
+				"fs_laser_time":0.0,
+				"dump_verbosity":5,
+				"dump_energy_space":"false",
+				"dump_x":0,
+				"dump_y":0,
+				"dump_z":0
+				},
+			"mesh": {
+				"segments":2,
+				"segment0": {
+					"len":1.2e-08,
+					"dt":1e-09,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment1": {
+					"len":1.0,
+					"dt":2e-09,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.8,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					}
+				},
+			"id":"id2a373fe410d7c2f0"
+			},
+		"segment3": {
+			"name":"TPC 400mV\n1Sun",
+			"icon":"tpc",
+			"config": {
+				"pulse_shift":5e-06,
+				"load_type":"load",
+				"pulse_L":0.0,
+				"Rload":50,
+				"pump_laser":"green",
+				"pulse_bias":0.0,
+				"pulse_light_efficiency":1.0,
+				"pulse_subtract_dc":"True",
+				"start_time":-1e-08,
+				"fs_laser_time":0.0,
+				"dump_verbosity":5,
+				"dump_energy_space":"false",
+				"dump_x":0,
+				"dump_y":0,
+				"dump_z":0
+				},
+			"mesh": {
+				"segments":2,
+				"segment0": {
+					"len":1.2e-08,
+					"dt":1e-09,
+					"voltage_start":0.4,
+					"voltage_stop":0.4,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment1": {
+					"len":1.0,
+					"dt":2e-09,
+					"voltage_start":0.4,
+					"voltage_stop":0.4,
+					"mul":1.8,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					}
+				},
+			"id":"id41e18b5d100238c5"
+			},
+		"segment4": {
+			"name":"TPC 50mV\n1Sun",
+			"icon":"tpc",
+			"config": {
+				"pulse_shift":5e-06,
+				"load_type":"load",
+				"pulse_L":0.0,
+				"Rload":50,
+				"pump_laser":"green",
+				"pulse_bias":0.0,
+				"pulse_light_efficiency":1.0,
+				"pulse_subtract_dc":"True",
+				"start_time":-1e-08,
+				"fs_laser_time":0.0,
+				"dump_verbosity":5,
+				"dump_energy_space":"false",
+				"dump_x":0,
+				"dump_y":0,
+				"dump_z":0
+				},
+			"mesh": {
+				"segments":2,
+				"segment0": {
+					"len":1.2e-08,
+					"dt":1e-09,
+					"voltage_start":0.05,
+					"voltage_stop":0.05,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment1": {
+					"len":1.0,
+					"dt":2e-09,
+					"voltage_start":0.05,
+					"voltage_stop":0.05,
+					"mul":1.8,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					}
+				},
+			"id":"id210fae0e14fc1210"
+			},
+		"segment5": {
+			"name":"TPV",
+			"icon":"tpv",
+			"config": {
+				"pulse_shift":5e-06,
+				"load_type":"open_circuit",
+				"pulse_L":0.0,
+				"Rload":50,
+				"pump_laser":"green",
+				"pulse_bias":0.0,
+				"pulse_light_efficiency":1.0,
+				"pulse_subtract_dc":"false",
+				"start_time":-4e-12,
+				"fs_laser_time":1e-06,
+				"dump_verbosity":5,
+				"dump_energy_space":"false",
+				"dump_x":0,
+				"dump_y":0,
+				"dump_z":0
+				},
+			"mesh": {
+				"segments":1,
+				"segment0": {
+					"len":4e-05,
+					"dt":1e-06,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.1,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					}
+				},
+			"id":"id02bb39df0d53aef4"
+			},
+		"segment6": {
+			"name":"TPC 400V\nDARK",
+			"icon":"tpc",
+			"config": {
+				"pulse_shift":5e-06,
+				"load_type":"load",
+				"pulse_L":0.0,
+				"Rload":50,
+				"pump_laser":"green",
+				"pulse_bias":0.4,
+				"pulse_light_efficiency":1.0,
+				"pulse_subtract_dc":"True",
+				"start_time":-1e-08,
+				"fs_laser_time":0.0,
+				"dump_verbosity":5,
+				"dump_energy_space":"false",
+				"dump_x":0,
+				"dump_y":0,
+				"dump_z":0
+				},
+			"mesh": {
+				"segments":2,
+				"segment0": {
+					"len":1.2e-08,
+					"dt":1e-09,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.0,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					},
+				"segment1": {
+					"len":1.0,
+					"dt":2e-09,
+					"voltage_start":0.0,
+					"voltage_stop":0.0,
+					"mul":1.8,
+					"sun_start":0.0,
+					"sun_stop":0.0,
+					"laser_start":0.0,
+					"laser_stop":0.0
+					}
+				},
+			"id":"id66e67d0ece53367b"
+			}
+		},
+	"fx_domain": {
+		"segments":4,
+		"segment0": {
+			"name":"IMPS",
+			"icon":"spectrum",
+			"config": {
+				"is_Vexternal":0.0,
+				"load_type":"open_circuit",
+				"fxdomain_large_signal":"True",
+				"fxdomain_Rload":50,
+				"fxdomain_points":30,
+				"fxdomain_n":5,
+				"fx_modulation_type":"voltage",
+				"fxdomain_measure":"measure_current",
+				"fxdomain_voltage_modulation_max":0.02,
+				"fxdomain_light_modulation_depth":0.02,
+				"fxdomain_do_fit":"True",
+				"fxdomain_L":0.0,
+				"periods_to_fit":2,
+				"fxdomain_modulation_rolloff_enable":"False",
+				"fxdomain_modulation_rolloff_start_fx":1000.0,
+				"fxdomain_modulation_rolloff_speed":1.6026e-05,
+				"fxdomain_norm_tx_function":"True",
+				"dump_verbosity":0,
+				"dump_screen_verbosity":"dump_verbosity_key_results"
+				},
+			"mesh": {
+				"segments":33,
+				"segment0": {
+					"start":1.0,
+					"stop":1.0,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment1": {
+					"start":1.59683374706574,
+					"stop":1.59683374706574,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment2": {
+					"start":2.54987801576802,
+					"stop":2.54987801576802,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment3": {
+					"start":4.07173126647942,
+					"stop":4.07173126647942,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment4": {
+					"start":6.50187789529708,
+					"stop":6.50187789529708,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment5": {
+					"start":10.3824180425112,
+					"stop":10.3824180425112,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment6": {
+					"start":16.5789955064261,
+					"stop":16.5789955064261,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment7": {
+					"start":26.4738995171125,
+					"stop":26.4738995171125,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment8": {
+					"start":42.2744161653528,
+					"stop":42.2744161653528,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment9": {
+					"start":67.5052143703369,
+					"stop":67.5052143703369,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment10": {
+					"start":107.794604409461,
+					"stop":107.794604409461,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment11": {
+					"start":172.13006207263,
+					"stop":172.13006207263,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment12": {
+					"start":274.863092002097,
+					"stop":274.863092002097,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment13": {
+					"start":438.910661131784,
+					"stop":438.910661131784,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment14": {
+					"start":700.86735564217,
+					"stop":700.86735564217,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment15": {
+					"start":1119.16864570615,
+					"stop":1119.16864570615,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment16": {
+					"start":1787.12626212144,
+					"stop":1787.12626212144,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment17": {
+					"start":2853.74352562297,
+					"stop":2853.74352562297,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment18": {
+					"start":4556.95396718514,
+					"stop":4556.95396718514,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment19": {
+					"start":7276.69787862636,
+					"stop":7276.69787862636,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment20": {
+					"start":11619.6767397923,
+					"stop":11619.6767397923,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment21": {
+					"start":18554.6919480952,
+					"stop":18554.6919480952,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment22": {
+					"start":29628.7582691274,
+					"stop":29628.7582691274,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment23": {
+					"start":47312.2010877959,
+					"stop":47312.2010877959,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment24": {
+					"start":75549.719344953,
+					"stop":75549.719344953,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment25": {
+					"start":120640.341431367,
+					"stop":120640.341431367,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment26": {
+					"start":192642.56845514,
+					"stop":192642.56845514,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment27": {
+					"start":307618.15443059,
+					"stop":307618.15443059,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment28": {
+					"start":491215.050204848,
+					"stop":491215.050204848,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment29": {
+					"start":784388.769233696,
+					"stop":784388.769233696,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment30": {
+					"start":1252538.45753173,
+					"stop":1252538.45753173,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment31": {
+					"start":2000095.67848434,
+					"stop":2000095.67848434,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment32": {
+					"start":3193820.27676414,
+					"stop":3193820.27676414,
+					"points":1.0,
+					"mul":1.0
+					}
+				},
+			"id":"idc3644392df38a7b1"
+			},
+		"segment1": {
+			"name":"IMVS",
+			"icon":"spectrum",
+			"config": {
+				"is_Vexternal":0.0,
+				"load_type":"open_circuit",
+				"fxdomain_large_signal":"True",
+				"fxdomain_Rload":50,
+				"fxdomain_points":30,
+				"fxdomain_n":5,
+				"fx_modulation_type":"optical",
+				"fxdomain_measure":"measure_voltage",
+				"fxdomain_voltage_modulation_max":0.02,
+				"fxdomain_light_modulation_depth":0.02,
+				"fxdomain_do_fit":"True",
+				"fxdomain_L":0.0,
+				"periods_to_fit":2,
+				"fxdomain_modulation_rolloff_enable":"False",
+				"fxdomain_modulation_rolloff_start_fx":1000.0,
+				"fxdomain_modulation_rolloff_speed":1.6026e-05,
+				"fxdomain_norm_tx_function":"True",
+				"dump_verbosity":0,
+				"dump_screen_verbosity":"dump_verbosity_key_results"
+				},
+			"mesh": {
+				"segments":33,
+				"segment0": {
+					"start":1.0,
+					"stop":1.0,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment1": {
+					"start":1.59683374706574,
+					"stop":1.59683374706574,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment2": {
+					"start":2.54987801576802,
+					"stop":2.54987801576802,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment3": {
+					"start":4.07173126647942,
+					"stop":4.07173126647942,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment4": {
+					"start":6.50187789529708,
+					"stop":6.50187789529708,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment5": {
+					"start":10.3824180425112,
+					"stop":10.3824180425112,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment6": {
+					"start":16.5789955064261,
+					"stop":16.5789955064261,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment7": {
+					"start":26.4738995171125,
+					"stop":26.4738995171125,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment8": {
+					"start":42.2744161653528,
+					"stop":42.2744161653528,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment9": {
+					"start":67.5052143703369,
+					"stop":67.5052143703369,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment10": {
+					"start":107.794604409461,
+					"stop":107.794604409461,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment11": {
+					"start":172.13006207263,
+					"stop":172.13006207263,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment12": {
+					"start":274.863092002097,
+					"stop":274.863092002097,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment13": {
+					"start":438.910661131784,
+					"stop":438.910661131784,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment14": {
+					"start":700.86735564217,
+					"stop":700.86735564217,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment15": {
+					"start":1119.16864570615,
+					"stop":1119.16864570615,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment16": {
+					"start":1787.12626212144,
+					"stop":1787.12626212144,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment17": {
+					"start":2853.74352562297,
+					"stop":2853.74352562297,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment18": {
+					"start":4556.95396718514,
+					"stop":4556.95396718514,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment19": {
+					"start":7276.69787862636,
+					"stop":7276.69787862636,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment20": {
+					"start":11619.6767397923,
+					"stop":11619.6767397923,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment21": {
+					"start":18554.6919480952,
+					"stop":18554.6919480952,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment22": {
+					"start":29628.7582691274,
+					"stop":29628.7582691274,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment23": {
+					"start":47312.2010877959,
+					"stop":47312.2010877959,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment24": {
+					"start":75549.719344953,
+					"stop":75549.719344953,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment25": {
+					"start":120640.341431367,
+					"stop":120640.341431367,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment26": {
+					"start":192642.56845514,
+					"stop":192642.56845514,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment27": {
+					"start":307618.15443059,
+					"stop":307618.15443059,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment28": {
+					"start":491215.050204848,
+					"stop":491215.050204848,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment29": {
+					"start":784388.769233696,
+					"stop":784388.769233696,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment30": {
+					"start":1252538.45753173,
+					"stop":1252538.45753173,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment31": {
+					"start":2000095.67848434,
+					"stop":2000095.67848434,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment32": {
+					"start":3193820.27676414,
+					"stop":3193820.27676414,
+					"points":1.0,
+					"mul":1.0
+					}
+				},
+			"id":"id48d7cf09e1dfa90b"
+			},
+		"segment2": {
+			"name":"IS",
+			"icon":"spectrum",
+			"config": {
+				"is_Vexternal":0.0,
+				"load_type":"load",
+				"fxdomain_large_signal":"True",
+				"fxdomain_Rload":50,
+				"fxdomain_points":30,
+				"fxdomain_n":5,
+				"fx_modulation_type":"voltage",
+				"fxdomain_measure":"measure_current",
+				"fxdomain_voltage_modulation_max":0.02,
+				"fxdomain_light_modulation_depth":0.02,
+				"fxdomain_do_fit":"True",
+				"fxdomain_L":0.0,
+				"periods_to_fit":2,
+				"fxdomain_modulation_rolloff_enable":"False",
+				"fxdomain_modulation_rolloff_start_fx":1000.0,
+				"fxdomain_modulation_rolloff_speed":1.6026e-05,
+				"fxdomain_norm_tx_function":"True",
+				"dump_verbosity":0,
+				"dump_screen_verbosity":"dump_verbosity_key_results"
+				},
+			"mesh": {
+				"segments":33,
+				"segment0": {
+					"start":1.0,
+					"stop":1.0,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment1": {
+					"start":1.59683374706574,
+					"stop":1.59683374706574,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment2": {
+					"start":2.54987801576802,
+					"stop":2.54987801576802,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment3": {
+					"start":4.07173126647942,
+					"stop":4.07173126647942,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment4": {
+					"start":6.50187789529708,
+					"stop":6.50187789529708,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment5": {
+					"start":10.3824180425112,
+					"stop":10.3824180425112,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment6": {
+					"start":16.5789955064261,
+					"stop":16.5789955064261,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment7": {
+					"start":26.4738995171125,
+					"stop":26.4738995171125,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment8": {
+					"start":42.2744161653528,
+					"stop":42.2744161653528,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment9": {
+					"start":67.5052143703369,
+					"stop":67.5052143703369,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment10": {
+					"start":107.794604409461,
+					"stop":107.794604409461,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment11": {
+					"start":172.13006207263,
+					"stop":172.13006207263,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment12": {
+					"start":274.863092002097,
+					"stop":274.863092002097,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment13": {
+					"start":438.910661131784,
+					"stop":438.910661131784,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment14": {
+					"start":700.86735564217,
+					"stop":700.86735564217,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment15": {
+					"start":1119.16864570615,
+					"stop":1119.16864570615,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment16": {
+					"start":1787.12626212144,
+					"stop":1787.12626212144,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment17": {
+					"start":2853.74352562297,
+					"stop":2853.74352562297,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment18": {
+					"start":4556.95396718514,
+					"stop":4556.95396718514,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment19": {
+					"start":7276.69787862636,
+					"stop":7276.69787862636,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment20": {
+					"start":11619.6767397923,
+					"stop":11619.6767397923,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment21": {
+					"start":18554.6919480952,
+					"stop":18554.6919480952,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment22": {
+					"start":29628.7582691274,
+					"stop":29628.7582691274,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment23": {
+					"start":47312.2010877959,
+					"stop":47312.2010877959,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment24": {
+					"start":75549.719344953,
+					"stop":75549.719344953,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment25": {
+					"start":120640.341431367,
+					"stop":120640.341431367,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment26": {
+					"start":192642.56845514,
+					"stop":192642.56845514,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment27": {
+					"start":307618.15443059,
+					"stop":307618.15443059,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment28": {
+					"start":491215.050204848,
+					"stop":491215.050204848,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment29": {
+					"start":784388.769233696,
+					"stop":784388.769233696,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment30": {
+					"start":1252538.45753173,
+					"stop":1252538.45753173,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment31": {
+					"start":2000095.67848434,
+					"stop":2000095.67848434,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment32": {
+					"start":3193820.27676414,
+					"stop":3193820.27676414,
+					"points":1.0,
+					"mul":1.0
+					}
+				},
+			"id":"id1ff208879994808a"
+			},
+		"segment3": {
+			"name":"test",
+			"icon":"spectrum",
+			"config": {
+				"is_Vexternal":0.0,
+				"load_type":"open_circuit",
+				"fxdomain_large_signal":"True",
+				"fxdomain_Rload":50,
+				"fxdomain_points":30,
+				"fxdomain_n":5,
+				"fx_modulation_type":"voltage",
+				"fxdomain_measure":"measure_current",
+				"fxdomain_voltage_modulation_max":0.02,
+				"fxdomain_light_modulation_depth":0.02,
+				"fxdomain_do_fit":"True",
+				"fxdomain_L":0.0,
+				"periods_to_fit":2,
+				"fxdomain_modulation_rolloff_enable":"False",
+				"fxdomain_modulation_rolloff_start_fx":1000.0,
+				"fxdomain_modulation_rolloff_speed":1.6026e-05,
+				"fxdomain_norm_tx_function":"True",
+				"dump_verbosity":1,
+				"dump_screen_verbosity":"dump_verbosity_everything"
+				},
+			"mesh": {
+				"segments":5,
+				"segment0": {
+					"start":1.0,
+					"stop":1.0,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment1": {
+					"start":1.59683374706574,
+					"stop":1.59683374706574,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment2": {
+					"start":2.54987801576802,
+					"stop":2.54987801576802,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment3": {
+					"start":4.07173126647942,
+					"stop":4.07173126647942,
+					"points":1.0,
+					"mul":1.0
+					},
+				"segment4": {
+					"start":6.50187789529708,
+					"stop":6.50187789529708,
+					"points":1.0,
+					"mul":1.0
+					}
+				},
+			"id":"id57a51a089322d8b6"
+			}
+		},
+	"cv": {
+		"segments":1,
+		"segment0": {
+			"name":"Capacitance\nVoltage",
+			"icon":"cv",
+			"config": {
+				"cv_start_voltage":-2.0,
+				"cv_stop_voltage":0.5,
+				"cv_dv_step":0.1,
+				"cv_fx":1000,
+				"load_type":"load",
+				"fxdomain_large_signal":"True",
+				"fxdomain_Rload":50,
+				"fxdomain_points":30,
+				"fxdomain_n":5,
+				"fx_modulation_type":"voltage",
+				"fxdomain_measure":"measure_current",
+				"fxdomain_voltage_modulation_max":0.02,
+				"fxdomain_light_modulation_depth":0.02,
+				"fxdomain_do_fit":"True",
+				"fxdomain_L":0.0,
+				"periods_to_fit":2,
+				"fxdomain_modulation_rolloff_enable":"False",
+				"fxdomain_modulation_rolloff_start_fx":1000.0,
+				"fxdomain_modulation_rolloff_speed":1.6026e-05,
+				"fxdomain_norm_tx_function":"False",
+				"dump_verbosity":0,
+				"dump_screen_verbosity":"dump_verbosity_key_results"
+				},
+			"id":"idc06e8f0550e4b424"
+			}
+		},
+	"parasitic": {
+		"Rshunt":1.14,
+		"Rcontact":19.5,
+		"otherlayers":0.0,
+		"Rshort":1.0,
+		"id":"id4ecfdfdc83d7b748"
+		},
+	"spm": {
+		"segments":1,
+		"segment0": {
+			"name":"Scanning probe\nmicroscopy",
+			"icon":"spm",
+			"config": {
+				"spm_voltage":1.0,
+				"spm_scan_section":"spm_whole_device",
+				"spm_x0":0.0,
+				"spm_z0":0.0,
+				"spm_x1":1e-06,
+				"spm_z1":1e-06
+				},
+			"id":"idb2b306d4f6af18a0"
+			}
+		},
+	"hard_limit": {
+		"segments":1,
+		"segment0": {
+			"token":"Eg",
+			"min":0.0,
+			"max":5.0
+			}
+		},
+	"perovskite": {
+		"perovskite_dt":10.0,
+		"perovskite_steps":1,
+		"perovskite_enabled":"False"
+		},
+	"singlet": {
+		"singlet_enabled":"False"
+		},
+	"electrical_solver": {
+		"solver_type":"drift-diffusion",
+		"boundary": {
+			"electrical_y0_boundry":"neumann",
+			"electrical_y0":0.0,
+			"electrical_y1_boundry":"neumann",
+			"electrical_y1":0.0,
+			"electrical_x0_boundry":"neumann",
+			"electrical_x0":0.0,
+			"electrical_x1_boundry":"neumann",
+			"electrical_x1":0.0
+			},
+		"poisson": {
+			"posclamp":1.0,
+			"pos_max_ittr":100,
+			"pos_min_error":1e-15,
+			"math_enable_pos_solver":"False",
+			"dump_print_pos_error":"False",
+			"pos_dump_verbosity":0,
+			"solver_verbosity":"solver_verbosity_nothing"
+			}
+		},
+	"spctral2": {
+		"spctral2_lat":36,
+		"spctral2_day":239,
+		"spctral2_hour":12,
+		"spctral2_minute":30,
+		"spctral2_preasure":1.0133,
+		"spctral2_aod":0.55,
+		"spctral2_water":1.42,
+		"spctral2_no2":0.0
+		},
+	"lasers": {
+		"segments":1,
+		"segment0": {
+			"name":"Green",
+			"icon":"laser",
+			"config": {
+				"laserwavelength":5.2e-07,
+				"spotx":0.005,
+				"spoty":0.005,
+				"pulseJ":5e-14,
+				"laser_pulse_width":5e-09,
+				"laser_photon_efficiency":1.0
+				},
+			"id":"id9d51785200bd51a6"
+			}
+		},
+	"circuit": {
+		"enabled":"True",
+		"circuit_diagram": {
+			"segments":4,
+			"segment0": {
+				"name":"bat",
+				"x0":3,
+				"y0":3,
+				"x1":4,
+				"y1":3,
+				"R":10.0,
+				"C":0.0,
+				"L":0.0,
+				"nid":1.0,
+				"I0":1e-12,
+				"layer":"none",
+				"Dphotoneff":1.0
+				},
+			"segment1": {
+				"name":"resistor",
+				"x0":4,
+				"y0":3,
+				"x1":5,
+				"y1":3,
+				"R":80.0,
+				"C":0.0,
+				"L":0.0,
+				"nid":1.0,
+				"I0":1e-12,
+				"layer":"none",
+				"Dphotoneff":1.0
+				},
+			"segment2": {
+				"name":"ground",
+				"x0":6,
+				"y0":3,
+				"x1":7,
+				"y1":3,
+				"R":10.0,
+				"C":0.0,
+				"L":0.0,
+				"nid":1.0,
+				"I0":1e-12,
+				"layer":"none",
+				"Dphotoneff":1.0
+				},
+			"segment3": {
+				"name":"diode",
+				"x0":5,
+				"y0":3,
+				"x1":6,
+				"y1":3,
+				"R":10.0,
+				"C":0.0,
+				"L":0.0,
+				"nid":1.55,
+				"I0":2e-12,
+				"layer":"none",
+				"Dphotoneff":0.5
+				}
+			}
+		},
+	"gl": {
+		"flyby": {
+			"segments":0
+			}
+		},
+	"world": {
+		"config": {
+			"world_automatic_size":"True",
+			"world_x0":0.0,
+			"world_x1":1e-05,
+			"world_y0":-1e-05,
+			"world_y1":1e-06,
+			"world_z0":0.0,
+			"world_z1":1e-05,
+			"world_margin_x0":1.0,
+			"world_margin_x1":1.0,
+			"world_margin_y0":1.0,
+			"world_margin_y1":1.0,
+			"world_margin_z0":1.0,
+			"world_margin_z1":1.0
+			},
+		"world_data": {
+			"segments":1,
+			"segment0": {
+				"enabled":"True",
+				"rotate_y":0,
+				"rotate_x":0,
+				"x0":0.0017480509891659654,
+				"z0":0.003931321324110378,
+				"y0":2.0663893290094777e-08,
+				"dx":2e-07,
+				"dy":2e-07,
+				"dz":2e-07,
+				"dx_padding":0.0,
+				"dy_padding":0.0,
+				"dz_padding":0.0,
+				"shape_nx":1,
+				"shape_ny":1,
+				"shape_nz":1,
+				"display_options": {
+					"show_solid":"True",
+					"show_mesh":"True",
+					"show_cut_through_x":"False",
+					"show_cut_through_y":"False",
+					"hidden":"False"
+					},
+				"shape_type":"box",
+				"shape_dos": {
+					"enabled":"False",
+					"symmetric_mobility_e":"symmetric",
+					"mue_z":1e-15,
+					"mue_x":1e-15,
+					"mue_y":1e-05,
+					"symmetric_mobility_h":"symmetric",
+					"muh_z":1e-15,
+					"muh_x":1e-15,
+					"muh_y":1e-05,
+					"Nc":5e+25,
+					"Nv":5e+25,
+					"free_to_free_recombination":0.0,
+					"dos_free_carrier_stats":"mb_equation",
+					"ss_srh_enabled":"False",
+					"srh_n1":1e+20,
+					"srh_p1":1e+20,
+					"srh_tau_n":1e-15,
+					"srh_tau_p":1e-15,
+					"dostype":"exponential",
+					"complex_lumo": {
+						"segments":2,
+						"function0": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							},
+						"function1": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							}
+						},
+					"complex_homo": {
+						"segments":2,
+						"function0": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							},
+						"function1": {
+							"function":"exp",
+							"function_enable":"True",
+							"function_a":4.207452e+20,
+							"function_b":0.1,
+							"function_c":0.0
+							}
+						},
+					"Ntrape":1e+20,
+					"Ntraph":1e+20,
+					"Etrape":0.06,
+					"Etraph":0.06,
+					"ion_density":0.0,
+					"ion_mobility":0.0,
+					"doping_start":0.0,
+					"doping_stop":0.0,
+					"Na0":0.0,
+					"Na1":0.0,
+					"Nd0":0.0,
+					"Nd1":0.0,
+					"Tstart":300.0,
+					"Tstop":305.0,
+					"Tpoints":1,
+					"nstart":-2.5,
+					"nstop":1.0,
+					"npoints":1000,
+					"pstart":-2.5,
+					"pstop":1.0,
+					"ppoints":1000,
+					"srh_start":-0.5,
+					"srhsigman_e":2.131895e-21,
+					"srhsigmap_e":3.142822e-22,
+					"srhvth_e":100000.0,
+					"srhsigman_h":3.142822e-22,
+					"srhsigmap_h":2.131895e-21,
+					"srhvth_h":100000.0,
+					"srh_bands":5,
+					"Esteps":1000,
+					"dump_band_structure":0,
+					"dos_enable_auger":"False",
+					"dos_auger_Cn":1e-26,
+					"dos_auger_Cp":1e-26,
+					"Xi":1.6,
+					"Eg":1.2,
+					"epsilonr":5.0,
+					"id":"id955c325ae476e805",
+					"exciton_enabled":"False",
+					"exciton_L":1e-08,
+					"exciton_tau":1e-10,
+					"exciton_kpl":4000000000.0,
+					"exciton_kfret":0.0,
+					"exciton_alpha":1e-13,
+					"exciton_kdis":100000000000.0,
+					"singlet_enabled":"False",
+					"singlet_k_fret":10000000000.0,
+					"singlet_k_s":80000000.0,
+					"singlet_k_isc":22000.0,
+					"singlet_k_ss":3.5e-18,
+					"singlet_k_sp":3e-10,
+					"singlet_k_st":1.9e-16,
+					"singlet_k_dext":10000000000.0,
+					"singlet_k_t":650.0,
+					"singlet_k_tp":2.8e-19,
+					"singlet_k_tt":2.2e-18,
+					"singlet_k_sd":1000000000.0,
+					"singlet_k_iscd":22000.0,
+					"singlet_k_spd":3e-16,
+					"singlet_k_std":1.9e-16,
+					"singlet_k_ssd":9.6e-19,
+					"singlet_k_td":660.0,
+					"singlet_k_ttd":2.4e-21,
+					"singlet_k_tpd":5.6e-19,
+					"singlet_zeta":1.4e-11,
+					"singlet_k_cav":1000000000000.0,
+					"singlet_beta_sp":0.0001,
+					"singlet_C":0.02,
+					"singlet_N_dop":4.2e+25,
+					"singlet_W":0.026
+					},
+				"shape_electrical": {
+					"enabled":"False",
+					"electrical_component":"resistance",
+					"electrical_shunt":1000000.0,
+					"electrical_symmetrical_resistance":"symmetric",
+					"electrical_series_z":0.2439,
+					"electrical_series_x":0.2439,
+					"electrical_series_y":1e-08,
+					"electrical_n":1.2,
+					"electrical_J0":5e-09,
+					"electrical_enable_generation":"False",
+					"id":"id7bb5e5ff90ab38ea"
+					},
+				"color_r":1.0,
+				"color_g":0.0,
+				"color_b":0.0,
+				"color_alpha":0.5,
+				"optical_material":"blends/p3htpcbm",
+				"shape_pl": {
+					"pl_emission_enabled":"False",
+					"pl_use_experimental_emission_spectra":"False",
+					"pl_input_spectrum":"none",
+					"pl_experimental_emission_efficiency":1.0,
+					"pl_fe_fh":1.0,
+					"pl_fe_te":1.0,
+					"pl_te_fh":1.0,
+					"pl_th_fe":1.0,
+					"pl_fh_th":1.0,
+					"ray_theta_steps":200,
+					"ray_theta_start":0,
+					"ray_theta_stop":360,
+					"ray_phi_steps":5,
+					"ray_phi_start":0,
+					"ray_phi_stop":360,
+					"ray_emission_source":"ray_emission_single_point"
+					},
+				"shape_heat": {
+					"thermal_kl":1.0,
+					"thermal_tau_e":1.0,
+					"thermal_tau_h":1.0
+					},
+				"name":"label",
+				"Gnp":0.0,
+				"moveable":"True",
+				"html_link":"https://onlinelibrary.wiley.com/doi/abs/10.1002/aenm.201100709",
+				"label":"This simulation is based on, Extracting microscopic device parameters from<br>transient photocurrent measurements of P3HT: PCBM solar cells Advanced<br>Energy Materials 2012 (Left click to open, right to delete)",
+				"id":"id90da31239539a02f"
+				}
+			}
+		},
+	"ml": {
+		"segments":2,
+		"segment0": {
+			"name":"new",
+			"icon":"ml",
+			"ml_random": {
+				"segments":0
+				},
+			"ml_patch": {
+				"segments":0
+				},
+			"ml_sims": {
+				"segments":2,
+				"segment0": {
+					"ml_sim_enabled":"True",
+					"sim_name":"segment0@jv",
+					"ml_patch": {
+						"segments":0
+						},
+					"id":"id045f0c455469f032"
+					},
+				"segment1": {
+					"ml_sim_enabled":"True",
+					"sim_name":"segment0@jv",
+					"ml_patch": {
+						"segments":0
+						},
+					"id":"id176e6edc7605cb0e"
+					}
+				},
+			"ml_config": {
+				"ml_number_of_archives":400,
+				"ml_sims_per_archive":40,
+				"ml_archive_path":"cwd",
+				"ml_vector_file_name":"vectors.json"
+				},
+			"id":"id522af4af0bb2be99"
+			},
+		"segment1": {
+			"name":"whatever",
+			"icon":"ml",
+			"ml_random": {
+				"segments":0
+				},
+			"ml_patch": {
+				"segments":0
+				},
+			"ml_sims": {
+				"segments":2,
+				"segment0": {
+					"ml_sim_enabled":"True",
+					"sim_name":"segment0@jv",
+					"ml_patch": {
+						"segments":0
+						},
+					"id":"id045f0c455469f032"
+					},
+				"segment1": {
+					"ml_sim_enabled":"True",
+					"sim_name":"segment0@jv",
+					"ml_patch": {
+						"segments":0
+						},
+					"id":"id176e6edc7605cb0e"
+					}
+				},
+			"ml_config": {
+				"ml_number_of_archives":400,
+				"ml_sims_per_archive":40,
+				"ml_archive_path":"cwd",
+				"ml_vector_file_name":"vectors.json"
+				},
+			"id":"idf1f8f57700339bba"
+			}
+		},
+	"icon":"icon",
+	"name":"P3HT:PCBM solar cell (PCE=4%)",
+	"hidden":"False",
+	"password":"",
+	"status":"open"
+	}
