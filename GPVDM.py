@@ -30,9 +30,9 @@ class gpvdm:
 
     def load_job(self, sim_name):
         self.sim_path = os.path.join(self.scan_dir, sim_name)
-        self.api.mkdir(self.sim_path)
-        self.api.clone(self.sim_path, os.getcwd())
-        self.data = gpvdm_data()
+        #self.api.mkdir(self.sim_path)
+        #self.api.clone(self.sim_path, os.getcwd())
+        #self.data = gpvdm_data()
         self.data.load(os.path.join(self.sim_path, "sim.json"))
         return self
 
@@ -76,8 +76,4 @@ class gpvdm:
 
     def run(self):
         self.api.server.simple_run()
-        return self
-
-    def plot(self):
-        self.api.build_multiplot(self.scan_dir, gnuplot=True)
         return self

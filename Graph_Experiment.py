@@ -138,7 +138,7 @@ def Calc_Cost(args):
 #print(Calc_Cost([2.121e-8,1.835e-8,7.874e-8,4.166e-7]))
 #print(Calc_Cost([1.7587377602472335e-08,3.2032514438528925e-08,7.647646435027887e-08,5.6413959090831547e-08]))
 #print(Calc_Cost([1e-7,1e-7,2.2e-7,1e-7]))
-with open('Failed PCBMP3HT/OnGoing_Experiment_70.exp', 'rb') as handle:
+with open('OnGoing_Experiment.exp', 'rb') as handle:
     data = pickle.load(handle)
     data = data[data != 0]
 
