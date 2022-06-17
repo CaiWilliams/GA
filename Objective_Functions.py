@@ -55,6 +55,13 @@ def update_series_resistance(G,population,cell_area,top_electrode_resitivity,bot
         G.save_job()
     return G
 
+def calculate_cost(G, population, cell_area, density, cost_per_g):
+    Cost = np.zeros(len(population))
+    for idx, m in enumerate(population):
+        args = m.chromosomes
+        Cost[idx] = calc_cost(args, cell_area, density, cost_per_g)
+    return Cost
+
 def PCE(population, top_electrode_resistivity = 2.65e-8, bottom_electrode_resistivity = 1e-4, cell_area = 6.00005025e-6):
     G = gpvdm()
     for idx,m in enumerate(population):
@@ -67,13 +74,6 @@ def PCE(population, top_electrode_resistivity = 2.65e-8, bottom_electrode_resist
     G.run()
     pce = read_pce(population)
     return pce
-
-def calculate_cost(G, population, cell_area, density, cost_per_g):
-    Cost = np.zeros(len(population))
-    for idx, m in enumerate(population):
-        args = m.chromosomes
-        Cost[idx] = calc_cost(args, cell_area, density, cost_per_g)
-    return Cost
 
 
 def PCE_COST(population, top_electrode_resistivity = 2.65e-8, bottom_electrode_resistivity = 1e-4, cell_area = 6.00005025e-6,  density = [7.14,1.011,1.3,2.7], cost_per_g = [28.68,7.08,1,0.233]):
