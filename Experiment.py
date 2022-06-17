@@ -50,4 +50,4 @@ class Experiment:
 
 
 
-Experiment(population_N=10,max_generations=0,objective_function=PCE_COST, cost_per_g = [0,0,1,0])
+Experiment(population_N=10,max_generations=0,objective_function=PCE_COST)
