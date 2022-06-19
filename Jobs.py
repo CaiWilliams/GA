@@ -24,7 +24,7 @@ class Jobs:
         while True:
             self.pull_remote()
             if self.experiments.empty == True:
-                time.sleep(1)
+                time.sleep(600)
                 self.pull_remote()
                 if self.test_new_experiments() == False:
                     break
