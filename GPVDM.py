@@ -65,6 +65,20 @@ class gpvdm:
             x = getattr(x, arg)
         setattr(x, args[-1], value)
 
+    def modify_temperature(self, temperature):
+        x = getattr(self.data,'epitaxy')
+        layers = getattr(x,'layers')
+        for layer in layers:
+            DOS = getattr(layer,'shape_dos')
+            setattr(DOS,'Tstart',float(temperature))
+            setattr(DOS,'Tstop',float(temperature+5))
+        return self
+
+    def modify_irradiance(self, irradiance):
+        x = getattr(self.data,'light')
+        setattr(x,'Psun',float(irradiance))
+        return self
+
     def remesh(self):
         self.data.mesh.config.remesh_x = "True"
         self.data.mesh.config.remesh_y = "True"
