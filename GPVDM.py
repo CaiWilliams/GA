@@ -1,8 +1,9 @@
 import os
 import sys
 import json
+import shutil
 
-sys.path.append("C:\\Users\\cai_w\\Desktop\\modules")
+sys.path.append("C:\\Users\\Cai Williams\\Desktop\\modules")
 
 from gpvdm_api import gpvdm_api
 from gpvdm_json import gpvdm_data
@@ -19,9 +20,11 @@ class gpvdm:
         self.api.mkdir(self.scan_dir)
         self.api.server.server_base_init(self.scan_dir)
 
-    def create_job(self, sim_name):
+    def create_job(self ,base_experiment, sim_name):
         self.sim_path = os.path.join(self.scan_dir, sim_name)
         self.api.mkdir(self.sim_path)
+        if base_experiment != 'sim.json':
+            shutil.copy2(base_experiment,'sim.json')
         self.api.clone(self.sim_path, os.getcwd())
 
         self.data = gpvdm_data()
@@ -32,7 +35,7 @@ class gpvdm:
         self.sim_path = os.path.join(self.scan_dir, sim_name)
         #self.api.mkdir(self.sim_path)
         #self.api.clone(self.sim_path, os.getcwd())
-        #self.data = gpvdm_data()
+        self.data = gpvdm_data()
         self.data.load(os.path.join(self.sim_path, "sim.json"))
         return self
 
@@ -63,7 +66,6 @@ class gpvdm:
         setattr(x, args[-1], value)
 
     def remesh(self):
-
         self.data.mesh.config.remesh_x = "True"
         self.data.mesh.config.remesh_y = "True"
         self.data.mesh.config.remesh_z = "True"

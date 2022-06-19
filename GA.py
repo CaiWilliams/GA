@@ -3,10 +3,12 @@ import pickle
 
 class Population:
 
-    def __init__(self, popultaion_number, mutate=0.2):
+    def __init__(self, base_experiment, popultaion_number, mutate=0.2):
         self.mutate = mutate
         self.population_number = popultaion_number
         self.population = np.zeros(popultaion_number, dtype=object)
+        self.base_experiment = base_experiment
+
 
     def add_members(self, members):
         if type(members) != list:
@@ -32,9 +34,12 @@ class Population:
 
     def rank_population(self, objective_funciton):
         self.objective_funciton = objective_funciton
-        self.result = objective_funciton.function(self.population, **objective_funciton.paramaters)
+        self.result = objective_funciton.function(self.base_experiment, self.population, **objective_funciton.paramaters)
         self.rank = np.zeros(len(self.result))
-        self.rank[:] = np.argsort(np.abs(self.result[:, 0] - objective_funciton.target))
+        if self.result.ndim > 1:
+            self.rank[:] = np.argsort(np.abs(self.result[:,0] - objective_funciton.target))
+        else:
+            self.rank[:] = np.argsort(np.abs(self.result[:] - objective_funciton.target))
         self.error = [np.abs(m - objective_funciton.target) / objective_funciton.target for m in self.result]
 
     def best_in_population(self, n):
@@ -46,7 +51,10 @@ class Population:
 
     def breed(self, n):
         breeding_pool = np.delete(self.population, self.worst_n_idx)
-        breeding_pool_results = np.delete(self.result[:, 0], self.worst_n_idx)
+        if self.result.ndim > 1:
+            breeding_pool_results = np.delete(self.result[:, 0], self.worst_n_idx)
+        else:
+            breeding_pool_results = np.delete(self.result[:], self.worst_n_idx)
         breeding_pool_rank = np.argsort(np.abs(breeding_pool_results - self.objective_funciton.target))
         breeding_pool[:] = breeding_pool[breeding_pool_rank]
         breeding_pool_weight = np.arange(1, 0, -1 / len(breeding_pool))
