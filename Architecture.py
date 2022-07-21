@@ -4,7 +4,7 @@ import numpy as np
 #import keyboard
 
 from GA import *
-from GPVDM import *
+#from GPVDM import *
 
 
 

@@ -5,7 +5,7 @@ import time
 
 from GA import Population,Member,ObjectiveFunction
 from Architecture import Architecture
-from Objective_Functions import PCE, PCE_COST
+from Objective_Functions import PCE, PCE_COST, Rastrigin
 
 
 
@@ -50,4 +50,4 @@ class Experiment:
 
 
 
-Experiment(population_N=10,max_generations=0,objective_function=PCE_COST)
+Experiment(population_N=2000,target=0,max_generations=50, chromosomes_min = [-4,-4,-4,-4], chromosomes_max= [4,4,4,4], mutation_chance=0.1, objective_function=Rastrigin)
