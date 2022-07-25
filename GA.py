@@ -32,7 +32,7 @@ class Population:
 
     def rank_population(self, objective_funciton):
         self.objective_funciton = objective_funciton
-        self.result = objective_funciton.function(self.population, **objective_funciton.paramaters)
+        self.result = objective_funciton.function(self.population)
         self.rank = np.zeros(len(self.result))
         self.rank[:] = np.argsort(np.abs(self.result[:, 0] - objective_funciton.target))
         self.error = [np.abs(m - objective_funciton.target) / objective_funciton.target for m in self.result]
@@ -99,9 +99,8 @@ class Member:
         return self
 
 
-class ObjectiveFunction:
+class Objective_Function:
 
-    def __init__(self, target, function, **paramaters):
+    def __init__(self, target, function):
         self.target = target
         self.function = function
-        self.paramaters = paramaters

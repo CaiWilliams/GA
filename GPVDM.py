@@ -2,7 +2,7 @@ import os
 import sys
 import json
 
-sys.path.append("C:\\Users\\cai_w\\Desktop\\modules")
+sys.path.append("C:\\Users\\dszm31\\modules")
 
 from gpvdm_api import gpvdm_api
 from gpvdm_json import gpvdm_data
@@ -32,7 +32,7 @@ class gpvdm:
         self.sim_path = os.path.join(self.scan_dir, sim_name)
         #self.api.mkdir(self.sim_path)
         #self.api.clone(self.sim_path, os.getcwd())
-        #self.data = gpvdm_data()
+        self.data = gpvdm_data()
         self.data.load(os.path.join(self.sim_path, "sim.json"))
         return self
 
@@ -62,6 +62,20 @@ class gpvdm:
             x = getattr(x, arg)
         setattr(x, args[-1], value)
 
+    def modify_temperature(self, temperature):
+        x = getattr(self.data, 'epitaxy')
+        layers = getattr(x, 'layers')
+        for layer in layers:
+            DOS = getattr(layer, 'shape_dos')
+            setattr(DOS, 'Tstart', float(temperature))
+            setattr(DOS, 'Tstop', float(temperature + 5))
+        return self
+
+    def modify_irradiance(self, irradiance):
+        x = getattr(self.data, 'light')
+        setattr(x, 'Psun', float(irradiance))
+        return self
+
     def remesh(self):
 
         self.data.mesh.config.remesh_x = "True"
@@ -71,7 +85,6 @@ class gpvdm:
     def save_job(self):
         self.data.save()
         self.api.add_job(path=self.sim_path)
-        self.data.save()
         return self
 
     def run(self):
