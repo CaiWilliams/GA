@@ -61,10 +61,10 @@ class Population:
             next_generation[idx] = next_generation[idx].mutate(self.mutate, self.limits)
         return next_generation
 
-    def next_generation(self, bn):
+    def next_generation(self):
         TNG = np.zeros(self.population_number, dtype=object)
-        TNG[:bn] = self.best_in_population(bn)
-        TNG[bn:] = self.breed(self.population_number - bn)
+        TNG[:len(self.best_n_idx)] = self.population[self.best_n_idx]
+        TNG[len(self.best_n_idx):] = self.breed(self.population_number - len(self.best_n_idx))
         self.population = TNG
 
     def save(self, filename):
@@ -84,11 +84,11 @@ class Member:
         if np.max(chromo_num) > self.chromosomes_length - 1:
             return print("Chromosome outside of defined length")
         else:
-            self.chromosomes[chromo_num] = np.random.uniform(min, max, len(chromo_num))
+            self.chromosomes[chromo_num] = np.around(np.random.uniform(min, max, len(chromo_num)), decimals=10)
 
     def set_chromosome_parents(self, mother, father, crossover):
-        self.chromosomes[:crossover] = mother.chromosomes[:crossover]
-        self.chromosomes[crossover:] = father.chromosomes[crossover:]
+        self.chromosomes[:crossover] = np.around(mother.chromosomes[:crossover], decimals=10)
+        self.chromosomes[crossover:] = np.around(father.chromosomes[crossover:], decimals=10)
         return self
 
     def mutate(self, p, limits):
