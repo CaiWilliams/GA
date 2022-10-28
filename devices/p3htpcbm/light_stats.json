@@ -1,0 +1,18 @@
+{
+	"layers" : 5,
+	"layer0": {
+		"light_frac_photon_generation": 0.000000e+00
+		},
+	"layer1": {
+		"light_frac_photon_generation": 4.580675e-02
+		},
+	"layer2": {
+		"light_frac_photon_generation": 3.116897e-01
+		},
+	"layer3": {
+		"light_frac_photon_generation": 5.281050e-01
+		},
+	"layer4": {
+		"light_frac_photon_generation": 1.143986e-01
+		}
+}
