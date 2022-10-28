@@ -167,7 +167,7 @@ cython_debug/
 
 /GPVDM
 /Results
-aabb.dat
+aabb.csv
 device.dat
 filter_test.dat
 Last_Generation.gen
